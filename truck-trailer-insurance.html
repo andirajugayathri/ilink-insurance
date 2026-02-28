@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck & Trailer Insurance | iLink Insurance</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="includes.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-697F4NVYBQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-697F4NVYBQ');
+  gtag('config', 'AW-679447771');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1466671036845429');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1466671036845429&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+<a href="#truckform" class="quote-button">REQUEST A QUOTE</a>
+    <div id="navbar"></div>
+
+    <section class="truck-hero-section">
+        
+        
+        <div class="container-fluid hotel-hero-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hotel-hero-content">
+                        <div class="hotel-rating">
+                            <div class="hotel-stars">
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                            </div>
+                            <span class="hotel-rating-text">(4.9/5)</span>
+                        </div>
+                        
+                        <div class="hotel-subtitle">Truck & Trailer Insurance</div>
+                        
+                        <h1 class="hotel-main-title">
+                            Truck & Trailer Insurance <br>plans that work for you.
+                        </h1>
+                        
+                        <a href="#truckform" class="hotel-cta-button">Get Quote</a>
+                        
+                        <div class="hotel-features">
+                            <div class="hotel-feature-item">
+                                <div class="hotel-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="hotel-feature-text">Instant Quotes</p>
+                            </div>
+                            
+                            <div class="hotel-feature-item">
+                                <div class="hotel-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="hotel-feature-text">Hassle Free Process</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 p-0">
+                    <div class="hotel-image-section">
+                        <img src="images/hero-truck.png" 
+                             alt="Hotel reception with professional staff" 
+                             class="hotel-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="truckform">
+        <div class="form-container">
+            <h1 class="form-title">REQUEST A QUOTE</h1>
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="switchTab(event, 'single')">Single Truck</button>
+                <button class="tab-btn" onclick="switchTab(event, 'multiple')">Multiple Trucks</button>
+            </div>
+            
+            <!-- Single Truck Form -->
+            <form id="singleTruckForm" action="zoho/forms/single_truck.php" class="quote-form active"
+                        method="POST">
+                        <div class="row form-row">
+                            <div class="col-md-4">
+                                <label class="form-label" for="full_name">Full Name<span
+                                        class="required">*</span></label>
+                                <input type="text" class="form-control" name="full_name" id="full_name" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" for="company_name">Company Name (if any)<span
+                                        class="required">*</span></label>
+                                <input type="text" class="form-control" name="company_name" id="company_name" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" for="email">Email<span class="required">*</span></label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="row form-row">
+                            <div class="col-md-4">
+                                <label class="form-label" for="contact_number">Contact Number<span
+                                        class="required">*</span></label>
+                                <input type="number" class="form-control" name="contact_number" id="contact_number"
+                                    required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label class="form-label" for="address">Address<span class="required">*</span></label>
+                                <input type="text" class="form-control" name="address" id="address" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label class="form-label" for="vehicle_type">Types of Vehicle<span
+                                        class="required">*</span></label>
+                                <select class="form-select" name="vehicle_type" id="vehicle_type" required>
+                                    <option value="" selected disabled>Select Vehicle Type</option>
+                                    <option value="Prime Mover">Prime Mover</option>
+                                    <option value="Rigid - Cab Chassis">Rigid - Cab Chassis</option>
+                                    <option value="Rigid - Pantech body">Rigid - Pantech body</option>
+                                    <option value="Rigid - Refrigerated Pantech">Rigid - Refrigerated Pantech</option>
+                                    <option value="Rigid - Tautliner body">Rigid - Tautliner body</option>
+                                    <option value="Rigid - Table Top or Tray">Rigid - Table Top or Tray</option>
+                                    <option value="Concrete Agitator">Concrete Agitator</option>
+                                    <option value="Concrete Boom pump truck">Concrete Boom pump truck</option>
+                                    <option value="Garbage truck/Compactor body">Garbage truck/Compactor body</option>
+                                    <option value="Skip Bin truck">Skip Bin truck</option>
+                                    <option value="Tipper body">Tipper body</option>
+                                    <option value="Tow Truck">Tow Truck</option>
+                                    <option value="Tanker body">Tanker body</option>
+                                    <option value="Stock Truck">Stock Truck</option>
+                                    <option value="Dump Truck">Dump Truck</option>
+                                    <option value="Horse Truck">Horse Truck</option>
+                                    <option value="Box Truck">Box Truck</option>
+                                    <option value="Mobile Crane truck">Mobile Crane truck</option>
+                                    <option value="Plant, Machinery and Equipment">Plant, Machinery and Equipment
+                                    </option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="row form-row">
+                            <div class="col-12 col-md-4">
+                                <label class="form-label" for="truck_details">Sum Insured (Truck Value)<span class="required">*</span></label>
+                                <input type="text" class="form-control" name="truck_details" id="truck_details"
+                                    required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label class="form-label" for="occupation">Occupation<span
+                                        class="required">*</span></label>
+                                <select class="form-select" name="occupation" id="occupation" required>
+                                    <option value="" selected disabled>Select Occupation</option>
+                                    <option value="Transport Operator (good carrying)">Transport Operator (good
+                                        carrying)</option>
+                                    <option value="Earth moving">Earth moving</option>
+                                    <option value="Builders & Tradesmen">Builders & Tradesmen</option>
+                                    <option value="Construction & Engineering">Construction & Engineering</option>
+                                    <option value="Wholesale">Wholesale</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label class="form-label" for="type_goods_carried">Types of goods carried<span
+                                        class="required">*</span></label>
+                                <select class="form-select" name="type_goods_carried" id="type_goods_carried" required>
+                                    <option value="" selected disabled>Select Goods Type</option>
+                                    <option value="General Goods">General Goods</option>
+                                    <option value="Waste Disposal">Waste Disposal</option>
+                                    <option value="Refrigerated Goods">Refrigerated Goods</option>
+                                    <option value="Furniture">Furniture</option>
+                                    <option value="Bulk Hazardous">Bulk Hazardous</option>
+                                    <option value="Vehicle Carrier">Vehicle Carrier</option>
+                                    <option value="Livestock">Livestock</option>
+                                    <option value="Building materials">Building materials</option>
+                                    <option value="Plant & Equipment">Plant & Equipment</option>
+                                    <option value="Tipping (Sand, rocks, gravel)">Tipping (Sand, rocks, gravel)</option>
+                                    <option value="Logging">Logging</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="row form-row">
+                            <div class="col-12">
+                                <label class="form-label">Coverage options required:
+                                    <span
+                                        class="required">*</span>
+                                </label>
+                                 
+                                <div class="row">
+                                    <div class="col-12 col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]"
+                                                value="Truck Insurance" id="cover_truck">
+                                            <label class="form-check-label" for="cover_truck">Truck Insurance</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]"
+                                                value="Liability Insurance" id="cover_liability">
+                                            <label class="form-check-label" for="cover_liability">Liability
+                                                Insurance</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]"
+                                                value="Downtime Insurance" id="cover_downtime">
+                                            <label class="form-check-label" for="cover_downtime">Downtime
+                                                Insurance</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]"
+                                                value="Marine Cargo Insurance" id="cover_marine">
+                                            <label class="form-check-label" for="cover_marine">Marine Cargo
+                                                Insurance</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]"
+                                                value="Personal Accident Insurance" id="cover_personal">
+                                            <label class="form-check-label" for="cover_personal">Personal Accident
+                                                Insurance</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]"
+                                                value="Workers Compensation" id="cover_workers">
+                                            <label class="form-check-label" for="cover_workers">Workers
+                                                Compensation</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]"
+                                                value="Owned Trailer Insurance" id="cover_owned_trailer">
+                                            <label class="form-check-label" for="cover_owned_trailer">Owned Trailer
+                                                Insurance</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]"
+                                                value="Trailer In Control Insurance" id="cover_trailer_control">
+                                            <label class="form-check-label" for="cover_trailer_control">Trailer In
+                                                Control Insurance</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row form-row">
+                            <div class="col-12">
+                                <label class="form-label" for="additional_info">Additional Information or coverage 
+                                    request (optional)</label>
+                                <textarea class="form-control" name="additional_info" id="additional_info" rows="3"
+                                    placeholder="Provide any additional info..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="submit-container">
+                            <button type="submit" class="submit-btn" name="submit_single">Submit</button>
+                        </div>
+                    </form>
+            
+
+            <!-- Multiple Truck Form -->
+                    <form id="multipleTruckForm" method="POST" action="zoho/forms/multiple_truck.php"
+                        class="quote-form" style="display: none;">
+                        <div class="row form-row">
+                            <div class="col-md-6">
+                                <label class="form-label" for="full_name_multi">Full Name<span
+                                        class="required">*</span></label>
+                                <input type="text" class="form-control" name="full-name" id="full_name_multi" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="company_name_multi">Company Name (if any)<span class="required">*</span></label>
+                                <input type="text" class="form-control" name="company-name" id="company_name_multi" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="row form-row">
+                             <div class="col-md-6">
+                                <label class="form-label" for="email_multi">Email<span
+                                        class="required">*</span></label>
+                                <input type="email" class="form-control" name="email" id="email_multi" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="contact_number_multi">Contact Number<span
+                                        class="required">*</span></label>
+                                <input type="tel" class="form-control" name="contact-number"
+                                    id="contact_number_multi" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="row form-row">
+                             <div class="col-md-6">
+                                <label class="form-label" for="address_multi">Address<span
+                                        class="required">*</span></label>
+                                <input type="text" class="form-control" name="address" id="address_multi" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="number_of_trucks">Total number of vehicles<span
+                                        class="required">*</span></label>
+                                <select class="form-select" name="number-of-trucks" id="number_of_trucks" required>
+                                    <option value="" selected disabled>Select Number</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="10+">10+</option>
+                                </select>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="row form-row">
+                             <div class="col-12">
+                                <label class="form-label">Please select the Coverage options required:</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]" value="Truck Insurance" id="cov_truck">
+                                            <label class="form-check-label" for="cov_truck">Truck Insurance</label>
+                                        </div>
+                                         <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]" value="Liability Insurance" id="cov_liability">
+                                            <label class="form-check-label" for="cov_liability">Liability Insurance</label>
+                                        </div>
+                                         <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]" value="Downtime Insurance" id="cov_downtime">
+                                            <label class="form-check-label" for="cov_downtime">Downtime Insurance</label>
+                                        </div>
+                                         <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]" value="Marine Cargo Insurance" id="cov_marine">
+                                            <label class="form-check-label" for="cov_marine">Marine Cargo Insurance</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]" value="Personal Accident Insurance" id="cov_personal">
+                                            <label class="form-check-label" for="cov_personal">Personal Accident Insurance</label>
+                                        </div>
+                                         <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]" value="Workers Compensation" id="cov_workers">
+                                            <label class="form-check-label" for="cov_workers">Workers Compensation</label>
+                                        </div>
+                                         <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]" value="Owned Trailer Insurance" id="cov_owned_trailer">
+                                            <label class="form-check-label" for="cov_owned_trailer">Owned Trailer Insurance</label>
+                                        </div>
+                                         <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="coverage_options[]" value="Trailer In Control Insurance" id="cov_trailer_control">
+                                            <label class="form-check-label" for="cov_trailer_control">Trailer In Control Insurance</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row form-row">
+                            <div class="col-12">
+                                <label class="form-label" for="additional_info_multi">Additional Information or coverage request</label>
+                                <textarea class="form-control" name="additional_info" id="additional_info_multi" rows="3" placeholder="Provide any additional info..."></textarea>
+                            </div>
+                        </div>
+                   
+                        <div class="submit-container">
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                
+                
+                
+        </div>
+    </div>
+
+   <!-- First Section - Truck & Trailer Types -->
+    <section class="hoteltxt-section">
+        <div class="container p-3 mt-3">
+            <div class="row sect-2">
+                <h3 class="hoteltxt-heading">Truck &amp; Trailer Insurance For</h3>
+                <div class="col-lg-6 col-md-6 col-sm-12 hoteltxt-mt-5">
+                    <ul class="hoteltxt-list">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Transport Operators</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Trade People &amp; Builders</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Long Haul &amp; Short Haul</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Prime movers</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Refrigerated trucks</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Owned trailers &amp; non-owned trailers (in control)</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Commercial Vehicles fleet</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 hoteltxt-mt-5">
+                    <ul class="hoteltxt-list">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Skip bin trucks</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Concrete agitators &amp; Hotmix / Bitumen carriers</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Tipper trucks</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Mobile Crane trucks</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Livestock carrier</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Petrol tankers</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Garbage trucks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="calltoaction-section">
+        <div class="container">
+            <div class="calltoaction-container">
+                <div class="calltoaction-content col-6">
+                    <h2 class="calltoaction-title">Our Toll free No :</h2>
+
+                    <a href="tel:1300170328" class="calltoaction-phone-button">
+                        <div class="calltoaction-phone-icon"><i class="fas fa-phone"></i></div>
+                        1300 170 328
+                    </a>
+
+                    <p class="calltoaction-description">
+                        Call us if you have any questions - We are happy to help you
+                    </p>
+                </div>
+
+                <div class="calltoaction-image-container col-6">
+                    <img src="images/call-to-action.png" alt="Customer Service Representative"
+                        class="calltoaction-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Section - Main Content -->
+    <section class="hoteltxt-section-alt">
+        <div class="container-fluid">
+            <div class="container transport-op">
+                <div class="text-center">
+                    <h3 class="hoteltxt-heading">Truck Insurance (Transport Operators)</h3>
+                </div>
+                <p class="hoteltxt-paragraph">Driving a truck is actually much harder than it looks. And the brave drivers that dedicate their lives to transporting goods throughout the country are at a constant risk from nature, careless drivers and malfunctioning equipment. We sincerely hope nothing goes wrong on the next trip. However, our job is to protect your assets in the event of something totally unforeseen. Truck insurance ensures that truck drivers can drive long hours knowing that their asset is well protected by us. We have you covered in the face of small and large unfortunate events.</p>
+                
+                <div class="">
+                    <h3 class="hoteltxt-heading hoteltxt-pb-2 black">Truck Insurance is provided for:</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="hoteltxt-list">
+                                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Rigid Trucks</li>
+                                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Prime Movers</li>
+                                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Trailers</li>
+                                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Refrigerated Goods Carriers</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="hoteltxt-list">
+                                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Tippers</li>
+                                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Goods Carrying Vehicles</li>
+                                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Mobile plants, including Mobile cranes</li>
+                                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Bulk Hazardous Goods Carriers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Third Section - Additional Packages -->
+    <section class="hoteltxt-section">
+        <div class="container package">
+            <div class="">
+                <h3 class="hoteltxt-heading">Furthermore, we offer the following packages:</h3>
+                
+                    <p class="hoteltxt-paragraph">Trailer in Control Insurance: This cover protects you against any loss of or damage to your vehicles, as well as compensation for third party vehicles and property.</p>
+                    <p class="hoteltxt-paragraph">Marine Cargo Insurance: This insurance provides cover for those goods that are in transit. Marine insurance helps to protect the value of goods in transit via sea.</p>
+                    <p class="hoteltxt-paragraph">Third Party Liability Insurance: This cover protects the third parties involved in incidents and your day to day business activities.</p>
+                    <p class="hoteltxt-paragraph">Public Liability Insurance: The public liability insurance protects your customers and other third parties against personal injury or damage to property due to any unfortunate incident or negligence on the part of the operator.</p>
+               
+            </div>
+        </div>
+    </section>
+
+    
+
+     <section class="truck-section">
+        <div class="truck-container">
+            <h2 class="truck-title">
+                Why Choose ilink Insurance as<br>
+                your go to Truck Insurance Broker
+            </h2>
+            
+            <div class="truck-content-wrapper">
+                <div class="row truck-main-content g-0">
+                    <div class="col-lg-7">
+                        <div class="truck-text-section">
+                            <div class="truck-feature-item">
+                                <div class="truck-icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <p class="truck-feature-text">
+                                    We provide tailor made truck insurance quotes for each of our clients. Every business is subject to different kinds of liabilities and we take into account every detail of the business to provide an 'end to end' solution.
+                                </p>
+                            </div>
+                            
+                            <div class="truck-feature-item">
+                                <div class="truck-icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <p class="truck-feature-text">
+                                    As reliable brokers, our first goal is to arrange the best insurance deal for you based on your requirements. After the best deal has been agreed upon, the ideal insurance provider is then contemplated for cheap truck insurance that fits your budget while guaranteeing sufficient protection.
+                                </p>
+                            </div>
+                            
+                            <div class="truck-feature-item">
+                                <div class="truck-icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <p class="truck-feature-text">
+                                    Our team comprises of young and proactive members that are up to date with every new insurance product. This means that you have an edge over your competitors when it comes to having your fleet covered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-5">
+                        <div class="truck-image-section">
+                            <div class="truck-decorative-shape"></div>
+                            <div class="truck-image-container">
+                                <img src="images/truck-feature.png" 
+                                     alt="Professional with truck fleet" 
+                                     class="truck-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script>
+        function switchTab(event, tabType) {
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+            
+            // Show/hide appropriate forms
+            if (tabType === 'single') {
+                document.getElementById('singleTruckForm').style.display = 'block';
+                document.getElementById('multipleTruckForm').style.display = 'none';
+            } else {
+                document.getElementById('singleTruckForm').style.display = 'none';
+                document.getElementById('multipleTruckForm').style.display = 'block';
+            }
+            
+            console.log('Switched to:', tabType);
+        }
+    </script>
+        <script src="assets/form.js"></script>
+</body>
+
+</html>

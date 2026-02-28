@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>public-and-productliability Insurance | iLink Insurance</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="includes.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-697F4NVYBQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-697F4NVYBQ");
+      gtag("config", "AW-679447771");
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1466671036845429");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1466671036845429&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <a href="#publicform" class="quote-button">REQUEST A QUOTE</a>
+
+    <div id="navbar"></div>
+
+    <section class="public-hero-section">
+      <div class="container-fluid hotel-hero-container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hotel-hero-content">
+              <div class="hotel-rating">
+                <div class="hotel-stars">
+                  <i class="fas fa-star hotel-star"></i>
+                  <i class="fas fa-star hotel-star"></i>
+                  <i class="fas fa-star hotel-star"></i>
+                  <i class="fas fa-star hotel-star"></i>
+                  <i class="fas fa-star hotel-star"></i>
+                </div>
+                <span class="hotel-rating-text">(4.9/5)</span>
+              </div>
+
+              <div class="hotel-subtitle">Public & Products Liability</div>
+
+              <h1 class="hotel-main-title">
+                Public & Products Liability plans that work for you
+              </h1>
+
+              <a href="#publicform" class="hotel-cta-button">Get Quote</a>
+
+              <div class="hotel-features">
+                <div class="hotel-feature-item">
+                  <div class="hotel-feature-icon">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <p class="hotel-feature-text">Instant Quotes</p>
+                </div>
+
+                <div class="hotel-feature-item">
+                  <div class="hotel-feature-icon">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <p class="hotel-feature-text">Hassle Free Process</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 p-0">
+            <div class="hotel-image-section">
+              <img
+                src="images/hero-public.png"
+                alt="Hotel reception with professional staff"
+                class="hotel-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="publicform">
+      <div class="form-container premium-form-card" style="max-width: 800px">
+        <h1 class="form-title">REQUEST A QUOTE</h1>
+        <form
+          id="quote"
+          action="zoho/forms/publicandproductliabilityquote.php"
+          method="post"
+        >
+          <div class="row justify-content-center g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label"
+                >Full Name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="full-name"
+                placeholder="Full Name"
+                required=""
+                fdprocessedid="67v8tp"
+              />
+              <div id="name-error"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="company" class="form-label"
+                >Company/Business Name (if any)<span class="required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="company"
+                name="company-name"
+                placeholder=""
+                required=""
+                fdprocessedid="1hgyq2v"
+              />
+              <div id="company-error"></div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-3">
+            <div class="col-md-6">
+              <label for="phone" class="form-label"
+                >Contact Number <span class="required">*</span></label
+              >
+              <input
+                type="number"
+                id="contact"
+                name="contact"
+                class="form-control"
+                placeholder="Enter your contact number"
+                maxlength="13"
+                fdprocessedid="63n19i"
+              />
+              <div id="contact-error" style="color: red; display: none"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label"
+                >Email <span class="required">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder=""
+                required=""
+                fdprocessedid="8x2kr9"
+              />
+              <div id="email-error"></div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-3">
+            <div class="col-md-6">
+              <label for="businessAddress" class="form-label"
+                >Business Address <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                name="business-address"
+                placeholder=""
+                required=""
+                fdprocessedid="wkifu"
+              />
+              <div id="address-error" style="color: red; display: none"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="businessDescription" class="form-label"
+                >Business Description<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="businessDescription"
+                name="business-description"
+                placeholder=""
+                required=""
+                fdprocessedid="wtbg0t"
+              />
+              <div
+                id="description-error"
+                style="color: red; display: none"
+              ></div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-3">
+            <div class="col-md-6">
+              <label for="numberOfDirectorsEmployees" class="form-label"
+                >No. of Directors &amp; employees
+                <span class="required">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="numberOfDirectorsEmployees"
+                name="number-of-directors-employees"
+                placeholder=""
+                required=""
+                fdprocessedid="inx569"
+              />
+              <div
+                id="numberOfDirectorsEmployees-error"
+                style="color: red; display: none"
+              ></div>
+            </div>
+            <div class="col-md-6">
+              <label for="turnover" class="form-label"
+                >Estimated Annual Turnover
+                <span class="required">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="estimatedAnnualTurnover"
+                name="estimated-annual-turnover"
+                placeholder=""
+                required=""
+                fdprocessedid="2yufi"
+              />
+              <div id="turnover-error" style="color: red; display: none"></div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-3">
+            <div class="col-md-12">
+              <label for="paymentsToSubcontractors" class="form-label"
+                >Payments to Subcontractors<span class="required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="paymentsToSubcontractors"
+                name="payments-to-subcontractors"
+                placeholder=""
+                required=""
+                fdprocessedid="yccmgah"
+              />
+              <div id="Payments-error" style="color: red; display: none"></div>
+            </div>
+            <div class="col-md-12">
+              <label class="form-label"
+                >Coverage Required (Select all that apply)
+                <span class="required">*</span></label
+              >
+
+              <div class="checkbox-grid">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="coverage[]" id="public-liability" value="Public and Products Liability">
+                    <label class="form-check-label" for="public-liability">Public and Products Liability</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="coverage[]" id="tools-of-trade" value="Tools of Trade (and machinery)">
+                    <label class="form-check-label" for="tools-of-trade">Tools of Trade (and machinery)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="coverage[]" id="commercial-motor-vehicle" value="Commercial Motor vehicle">
+                    <label class="form-check-label" for="commercial-motor-vehicle">Commercial Motor vehicle</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="coverage[]" id="personal-accident-sickness" value="Personal Accident & Sickness">
+                    <label class="form-check-label" for="personal-accident-sickness">Personal Accident & Sickness</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="coverage[]" id="professional-indemnity" value="Professional Indemnity Insurance (PI)">
+                    <label class="form-check-label" for="professional-indemnity">Professional Indemnity Insurance (PI)</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- CAPTCHA -->
+          <div class="row">
+            <div class="col-md-12">
+              <label for="math_verification" class="form-label"
+                >Please solve: <span id="question">3 × 7</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="math_verification"
+                name="math_verification"
+                placeholder="Enter your answer"
+                required=""
+                fdprocessedid="aj96t6"
+              />
+              <p
+                id="math_verification-error"
+                style="color: red; display: none"
+              ></p>
+              <input type="hidden" id="correct_answer" name="correct_answer" />
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <input
+                type="hidden"
+                id="form_start_time"
+                name="form_start_time"
+              />
+              <script>
+                // Set form_start_time to the exact time (in seconds) when the page finishes loading
+                document.addEventListener("DOMContentLoaded", function () {
+                  document.getElementById("form_start_time").value = Math.floor(
+                    Date.now() / 1000,
+                  );
+                });
+              </script>
+              <button type="submit" class="submit-btn" fdprocessedid="8pjq57">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="hoteltxt-section-alt">
+      <div class="container">
+        <h3 class="hoteltxt-heading text-center mt-4">
+          Public Liability Insurance for:
+        </h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="">
+              <ul class="hoteltxt-list">
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Scaffolders liability Insurance
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Asbestos / Demolition Liability
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Commercial Cleaners (Incl. Shopping centres)
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Recycling facilities
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Transport Operators
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Machine operators
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="">
+              <ul class="hoteltxt-list">
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Contract works (All Risk Cover) – for Registered Builders
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Manufacturing units, importers and exporters
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Security Industry insurance
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Not-for-profit cover
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i>Tax
+                  Deductible
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+                  >Construction workers (all trade people)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calltoaction-section">
+      <div class="container">
+        <div class="calltoaction-container">
+          <div class="calltoaction-content col-6">
+            <h2 class="calltoaction-title">Our Toll free No :</h2>
+
+            <a href="tel:1300170328" class="calltoaction-phone-button">
+              <div class="calltoaction-phone-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              1300 170 328
+            </a>
+
+            <p class="calltoaction-description">
+              Call us if you have any questions - We are happy to help you save
+              the most money possible.
+            </p>
+          </div>
+
+          <div class="calltoaction-image-container col-6">
+            <img
+              src="images/call-to-action.png"
+              alt="Customer Service Representative"
+              class="calltoaction-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hoteltxt-section">
+      <div class="container-fluid">
+        <div class="container">
+          <h2 class="hoteltxt-heading text-center">
+            Public Liability Insurance
+          </h2>
+          <p class="hoteltxt-paragraph">
+            Every business, no matter the size, has a duty of care to the
+            general public. If a claim is made and your business is deemed
+            negligent, the courts will award costs and damages against you.
+            Where a business is the manufacturer or distributor of a product it
+            may also be liable for the failure of those products that it sells
+            under the Trade Practices Act.
+          </p>
+
+          <h1 class="hoteltxt-heading">
+            A thorough Products and public liability insurance policy should
+            provide the following cover for all your business activities:
+          </h1>
+          <ul class="hoteltxt-list">
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+              >Provision and coordination of a defence from claims made against
+              your business
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>Where
+              your business is deemed negligent; provision for payment of costs
+              and damages, including compensation for bodily injury or property
+              damage that are awarded against you
+            </li>
+          </ul>
+
+          <p class="hoteltxt-paragraph">
+            Therefore, every business should have a Public and Products
+            Liability policy in place.
+          </p>
+          <p class="hoteltxt-paragraph">
+            It is important to know that your policy will not cover you for
+            criminal or willful misconduct and most policies will exclude
+            exports to North America and Canada (unless specifically included
+            via an endorsement).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hoteltxt-section">
+      <div class="container public-sec-4">
+        <div class="hoteltxt-tips-container">
+          <h3 class="hoteltxt-heading">
+            Who needs Public Liability Insurance?
+          </h3>
+          <p class="hoteltxt-paragraph">
+            All entities that have a legal status, from large commercial
+            enterprises through to sole traders.
+          </p>
+          <p class="hoteltxt-paragraph">
+            As organisations are becoming more risk averse, they require their
+            business partners to have insurance in place. All property owners
+            have a lease requirement that their tenants have a policy in place
+          </p>
+
+          <h3 class="hoteltxt-heading">Important Tips</h3>
+          <ul class="hoteltxt-list">
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Always
+              discuss with your insurance broker before you alter your business
+              activities. This is vital so that the insurance policy can be
+              amended to include adequate coverage for all your activities
+              and/or products/services.
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Do not
+              enter into agreements that add a third party as an insured or have
+              phrases like "hold harmless" or "waiver of subrogation".
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i> When
+              checking someone else's 'Certificate of Insurance', make sure that
+              the business activity stated actually reflects the tasks they
+              perform. It is very easy to purchase a cheap policy that in fact
+              does not cover the organisation's real occupation.
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Be
+              aware that not all 'Certificates of Insurance' are the same. You
+              should take care if the insurer is not approved by the Australian
+              Financial Services Regulator (APRA). A Certificate of Insurance is
+              worthless if the insurer does not have the capital to pay a claim.
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Always
+              keep thorough documentation of accidents or incidents that may
+              arise into a claim. Often claims are received many years after the
+              event, so it is important to request current employees and
+              witnesses to provide an incident report.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/form.js"></script>
+  </body>
+</html>

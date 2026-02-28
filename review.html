@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iLink Insurance Brokers - Feedback</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/cropped-website-logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Removed Bootstrap CSS -->
+    <script src="includes.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header-text {
+            text-align: left;
+            margin: 40px 0 30px;
+        }
+        
+        .company-name {
+            font-weight: 700;
+            font-size: 22px;
+        }
+        
+        .review-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .review-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .review-subtitle {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .stars-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .star {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .star-outline {
+            stroke-width: 2px;
+            fill: transparent;
+        }
+        
+        .star-1 { stroke: #FF2D2D; }
+        .star-2 { stroke: #FF2D2D; }
+        .star-3 { stroke: #FFA500; }
+        .star-4 { stroke: #4CAF50; }
+        .star-5 { stroke: #4CAF50; }
+        
+        .star.selected .star-outline {
+            fill: currentColor;
+        }
+        
+        .star-number {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 500;
+        }
+        
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+            width: 90%;
+            max-width: 450px;
+        }
+        
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            margin-right: 10px;
+        }
+        
+        .btn-cancel {
+            background-color: #f8f9fa;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+        
+        .thank-you {
+            display: none;
+            text-align: center;
+            padding: 15px;
+            background-color: #d4edda;
+            color: #155724;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .quote-request {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #E9855A;
+            color: white;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            padding: 20px 10px;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+         .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        /* Override any Bootstrap centering if it still exists */
+        #navbar * {
+            text-align: left !important;
+        }
+        
+        #footer * {
+            text-align: left !important;
+        }
+        
+        /* Reset any unwanted centering */
+        * {
+            text-align: initial;
+        }
+        
+        /* Only center what should be centered */
+        .review-title,
+        .review-subtitle,
+        .stars-container {
+            text-align: center;
+        }
+    </style>
+       
+</head>
+<body>
+    <!--<div id="navbar"></div>-->
+    
+    <div class="container">
+        <div class="header-text">
+           
+            <h1>Thank you for choosing <span class="company-name">ILINK INSURANCE.</span></h1>
+            <p>We would appreciate your feedback. Please rate our service and provide your feedback based on your experience with <strong>ILINK</strong>. It only takes 30 seconds...and it really matters to us!</p>
+        </div>
+        
+        <div class="review-card">
+            <h2 class="review-title">Review us on Google</h2>
+            <p class="review-subtitle">Click on a star below that best suits your experience with iLink Insurance.</p>
+            
+            <div class="stars-container">
+                <div class="star" onclick="rate(1)">
+                    <svg viewBox="0 0 24 24" height="100%" width="100%">
+                        <path class="star-outline star-1" d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <div class="star-number">1</div>
+                </div>
+                <div class="star" onclick="rate(2)">
+                    <svg viewBox="0 0 24 24" height="100%" width="100%">
+                        <path class="star-outline star-2" d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <div class="star-number">2</div>
+                </div>
+                <div class="star" onclick="rate(3)">
+                    <svg viewBox="0 0 24 24" height="100%" width="100%">
+                        <path class="star-outline star-3" d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <div class="star-number">3</div>
+                </div>
+                <div class="star" onclick="rate(4)">
+                    <svg viewBox="0 0 24 24" height="100%" width="100%">
+                        <path class="star-outline star-4" d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <div class="star-number">4</div>
+                </div>
+                <div class="star" onclick="rate(5)">
+                    <svg viewBox="0 0 24 24" height="100%" width="100%">
+                        <path class="star-outline star-5" d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <div class="star-number">5</div>
+                </div>
+            </div>
+            
+            <div id="thank-you" class="thank-you">
+                Thank you for your feedback! We appreciate your time.
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Popup -->
+    <div id="overlay" class="overlay"></div>
+    <div id="popup" class="popup">
+         <button class="close-btn" onclick="closePopup()">✖</button>
+        <h3>We Value Your Feedback</h3>
+        <p>Please let us know how we can improve your experience.</p>
+        <form  action="sendreview.php" method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email"  id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="issue" name="issue"  rows="4" placeholder="Please share your experience with us..." required></textarea>
+            </div>
+            <button type="submit" name="submit" class="btn btn-submit">Submit Feedback</button>
+        </form>
+    </div>
+    
+  
+    
+    <!--<div id="footer"></div>-->
+ 
+    <script>
+        // Load header and footer if they exist
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(() => console.log('No header file found'));
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(() => console.log('No footer file found'));
+            
+        let selectedRating = 0;
+
+        function rate(rating) {
+            selectedRating = rating;
+
+            // Highlight selected stars
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.add('selected');
+                } else {
+                    s.classList.remove('selected');
+                }
+            });
+
+            // Open feedback form if rating is 3 or below
+            if (rating <= 3) {
+                openPopup();
+            } else {
+                // Show thank you message for 2 seconds before redirecting
+                // document.getElementById('thank-you').style.display = 'block';
+                setTimeout(() => {
+                    // Redirect to Google Reviews for 4 or 5 stars
+                    window.open("https://g.page/r/CTmUZ6C909jwEAI/review", "_blank");
+                }, 0);
+            }
+        }
+
+        function openPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const issue = document.getElementById('issue').value;
+
+            // In a real implementation, you would send this data to your server
+            console.log(`Feedback: Name: ${name}, Email: ${email}, Rating: ${selectedRating}, Issue: ${issue}`);
+            
+            // Close the popup after submission
+            closePopup();
+            
+            // Show thank you message
+            document.getElementById('thank-you').style.display = 'block';
+            
+            // Reset form
+            document.getElementById('feedback-form').reset();
+        });
+    </script>
+</body>
+</html>

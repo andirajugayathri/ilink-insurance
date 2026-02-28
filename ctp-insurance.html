@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTP Insurance | iLink Insurance</title>
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="includes.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-697F4NVYBQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-697F4NVYBQ');
+  gtag('config', 'AW-679447771');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1466671036845429');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1466671036845429&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+  <a href="#ctpform" class="quote-button">REQUEST A QUOTE</a>
+  
+    <div id="navbar"></div>
+    
+    <section class="ctp-hero-section">
+        
+        
+        <div class="container-fluid hotel-hero-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hotel-hero-content">
+                        <div class="hotel-rating">
+                            <div class="hotel-stars">
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                            </div>
+                            <span class="hotel-rating-text">(4.9/5)</span>
+                        </div>
+                        
+                        <div class="hotel-subtitle">CTP Insurance</div>
+                        
+                        <h1 class="hotel-main-title">
+                            CTP Insurance plans that work for you
+                        </h1>
+                        
+                        <a href="#ctpform" class="hotel-cta-button">Get Quote</a>
+                        
+                        <div class="hotel-features">
+                            <div class="hotel-feature-item">
+                                <div class="hotel-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="hotel-feature-text">Instant Quotes</p>
+                            </div>
+                            
+                            <div class="hotel-feature-item">
+                                <div class="hotel-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="hotel-feature-text">Hassle Free Process</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 p-0">
+                    <div class="hotel-image-section">
+                        <img src="images/hero-ctp.png" 
+                             alt="ctp insurance" 
+                             class="hotel-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <div class="container" id="ctpform">
+        <div class="form-container">
+            <h1 class="form-title">REQUEST A QUOTE</h1>
+            <form id="quote" action='zoho/forms/ctpquote.php' method='post'>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Full Name <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="name" name="full-name" placeholder="Full Name" required="" fdprocessedid="cdk74">
+                        <div id="name-error"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Full Address <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="Enter location" required="" fdprocessedid="r16b2">
+                        <div id="address-error"></div>
+                    </div>
+                </div>
+                
+                <div class="row g-3">
+                     <div class="col-md-6">
+                        <label class="form-label">Contact Number <span class="required">*</span></label>
+                        <input type="number" id="contact" name="contact" class="form-control " placeholder="Enter your contact number" maxlength="13" fdprocessedid="78e6s3">
+                        <div id="contact-error"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email <span class="required">*</span></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="" fdprocessedid="nzivi">
+                        <div id="email-error"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="form-label">CTP insurance start date/renewal date <span class="required">*</span></label>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="Month" required="" fdprocessedid="cjx3hg">
+                            </div>
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="Day" required="" fdprocessedid="n3a1qg">
+                            </div>
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="Year" required="" fdprocessedid="948tse">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="occupation" class="form-label">Your Occupation<span class="required">*</span></label>
+                       <input type="text" class="form-control" id="occupation" name="occupation" placeholder="Occupation" required="" fdprocessedid="qvk13">
+                        <div id="occupation-error" style="color:red; display:none;"></div>
+                    </div>
+                </div>
+                
+                <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label">Billing Number <span class="required">*</span></label>
+                        <input type="number" class="form-control" id="billingNumber" name="billing-number" placeholder="Billing Number" required="" fdprocessedid="sm9jke">
+                      </div> 
+                     <div class="col-md-6">
+                        <label class="form-label">Plate Number <span class="required">*</span></label>
+                       <input type="number" class="form-control" id="plateNumber" name="plate-number" placeholder="Plate Number" required="" fdprocessedid="ch56j">
+                      </div> 
+                </div>
+
+                <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label">VIN number/Chassis number <span class="required">*</span></label>
+                        <input type="number" class="form-control" id="vinNumber" name="vin-number" placeholder="VIN number" required="" fdprocessedid="lieh9g">
+                      </div> 
+                     <div class="col-md-6">
+                        <label class="form-label">Customer number<span class="required">*</span></label>
+                        <input type="number" class="form-control" id="customerNumber" name="customer-number" placeholder="Customer number" required="" fdprocessedid="apm5qq">
+                      </div> 
+                </div>
+
+                <div class="row g-3">
+                      <div class="col-md-12">
+                        <label class="form-label">Is the vehicle<span class="required">*</span></label>
+                        <select id="vehicleStatus" name="vehicle-status" class="form-select" required="" fdprocessedid="n8fqgo">
+                                <option value="">please select</option>
+                            <option value="current">current</option>
+                            <option value="brand new">brand new</option>
+                            <option value="Blue slip Required">Blue slip Required</option>
+                            </select>
+                      </div> 
+                </div>
+
+                 <h3 class="section-title text-center">Vehicle details</h3>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="manufacture" class="form-label">Year of manufacture? (refer RMS registration paper)<span class="required">*</span></label>
+                        <input type="number" class="form-control" id="yearManufacture" name="year-manufacture" placeholder="Year of manufacture" required="" fdprocessedid="r18899">
+                        <div id="manufacture-error" style="color:red; display:none;"></div>
+                       </div>
+                    <div class="col-md-6">
+                        <label for="vehicle" class="form-label">Make of vehicle?<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="makeVehicle" name="make-vehicle" placeholder="Make of vehicle" required="" fdprocessedid="xbg6d8">
+                        <div id="vehicle-error" style="color:red; display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="vehicleshape" class="form-label">Vehicle Shape? (this is noted as a 3-letter code of your registration paper) <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="vehicleShape" name="vehicle-shape" placeholder="Vehicle shape" required="" fdprocessedid="tnvt1g">
+                        <div id="vehicleshape-error" style="color:red; display:none;"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="vehiclegvm" class="form-label">Vehicle GVM<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="vehicleGVM" name="vehicle-gvm" placeholder="Vehicle GVM" required="" fdprocessedid="x2y9bu">
+                        <div id="vehiclegvm-error" style="color:red; display:none;"></div>
+                    </div> 
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="Vehicleusage" class="form-label">Vehicle usage? (this is noted as a 4-letter code on the bottom of your RMS papers)<span class="required">*</span></label>
+                        <div id="Vehicleusage-error" style="color:red; display:none;"></div>
+                        <select id="vehicleUsage" name="vehicle-usage" class="form-select" required="" fdprocessedid="7miufn">
+                            <option value="">please select</option>
+                            <option value="commercial">commercial</option>
+                            <option value="Private">Private</option>
+                        </select>
+                     </div>
+                     <div class="col-md-6">
+                        <label for="postcode" class="form-label">At what postcode do you garage the vehicle? <span class="required">*</span></label>
+                        <input type="number" class="form-control" id="postcode" name="postcode" placeholder="Postcode" required="" fdprocessedid="hchnc">
+                        <div id="postcode-error" style="color:red; display:none;"></div>
+                    </div> 
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="suburb" class="form-label">At what suburb do you garage the vehicle?<span class="required">*</span></label>
+                       <input type="text" class="form-control" id="suburb" name="suburb" placeholder="Suburb" required="" fdprocessedid="bcyiwr">
+                        <div id="suburb" style="color:red; display:none;"></div>
+                    </div> 
+                    <div class="col-md-6">
+                        <label for="customer" class="form-label">What type of customer are you?<span class="required">*</span></label>
+                        <div id="customer-error" style="color:red; display:none;"></div>
+                        <select id="customerType" name="customer-type" class="form-select" required="" fdprocessedid="w60ep1">
+                            <option value="">please select</option>
+                            <option value="Company">Company</option>
+                            <option value="Used car dealer">Used car Dealer</option>
+                            <option value="Fleet">fleet</option>
+                        </select>
+                     </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">What duration of insurance would you like?<span class="required">*</span></label>
+                        <select id="insuranceDuration" name="insurance-duration" class="form-select" required="" fdprocessedid="w8uoj8">
+                            <option value="">please select</option>
+                            <option value="6 months">6 Months</option>
+                            <option value="12 months">12 Months</option>
+                        </select>
+                    </div>
+                     <div class="col-md-6">
+                        <label class="form-label">Are you entitled to an input tax credit?<span class="required">*</span></label>
+                        <select id="inputTaxCredit" name="input-tax-credit" class="form-select" required="" fdprocessedid="y4c0rv">
+                            <option value="">please select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- CAPTCHA -->
+                <div class="row g-3">
+                    <div class="col-md-12">
+                    <label for="math_verification" class="form-label">Please solve: <span id="question">4 × 5</span></label>
+                    <input type="text" id="math_verification" class="form-control" placeholder="Enter your answer">
+                    <p id="math_verification-error" style="color: red; display: none;"></p>
+                    <input type="hidden" id="correct_answer" name="correct_answer">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                           <input type="hidden" id="form_start_time" name="form_start_time">
+     <script>
+  // Set form_start_time to the exact time (in seconds) when the page finishes loading
+  document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("form_start_time").value = Math.floor(Date.now() / 1000);
+  });
+  </script>
+                        <button type="submit" class="submit-btn" fdprocessedid="fbf0qr">Submit</button>
+                    </div>
+                </div>
+            </form>      
+        </div>
+    </div>
+
+   
+
+    <section class="calltoaction-section">
+        <div class="container">
+            <div class="calltoaction-container">
+                <div class="calltoaction-content col-6">
+                    <h2 class="calltoaction-title">Our Toll free No :</h2>
+
+                    <a href="tel:1300170328" class="calltoaction-phone-button">
+                        <div class="calltoaction-phone-icon"><i class="fas fa-phone"></i></div>
+                        1300 170 328
+                    </a>
+
+                    <p class="calltoaction-description">
+                        Call us if you have any questions - We are happy to help you save the most money possible.
+                    </p>
+                </div>
+
+                <div class="calltoaction-image-container col-6">
+                    <img src="images/call-to-action.png" alt="compulsory third party insurance"
+                        class="calltoaction-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+
+    <div id="footer"></div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+     <script src="assets/form.js"></script>
+</body>
+
+</html>

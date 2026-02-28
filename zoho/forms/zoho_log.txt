@@ -1,0 +1,2 @@
+2025-02-19 06:10:37 - Response: {"data":[{"code":"INVALID_DATA","details":{"expected_data_type":"jsonarray","api_name":"Coverage_Required"},"message":"invalid data","status":"error"}]}
+Zoho API Error (202): {"data":[{"code":"INVALID_DATA","details":{"expected_data_type":"jsonarray","api_name":"Coverage_Required"},"message":"invalid data","status":"error"}]}

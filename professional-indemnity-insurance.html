@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Indemnity Insurance | iLink Insurance</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="includes.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-697F4NVYBQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-697F4NVYBQ');
+  gtag('config', 'AW-679447771');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1466671036845429');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1466671036845429&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+    <a href="#professionalform" class="quote-button">REQUEST A QUOTE</a>
+
+    <div id="navbar"></div>
+
+     <section class="prof-hero-section">
+        
+        
+        <div class="container-fluid hotel-hero-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hotel-hero-content">
+                        <div class="hotel-rating">
+                            <div class="hotel-stars">
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                            </div>
+                            <span class="hotel-rating-text">(4.9/5)</span>
+                        </div>
+                        
+                        <div class="hotel-subtitle">Professional Indemnity Insurance</div>
+                        
+                        <h1 class="hotel-main-title">
+                            Professional Indemnity Insurance <br>plans that work for you.
+                        </h1>
+                        
+                        <a href="#professionalform" class="hotel-cta-button">Get Quote</a>
+                        
+                        <div class="hotel-features">
+                            <div class="hotel-feature-item">
+                                <div class="hotel-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="hotel-feature-text">Instant Quotes</p>
+                            </div>
+                            
+                            <div class="hotel-feature-item">
+                                <div class="hotel-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="hotel-feature-text">Hassle Free Process</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 p-0">
+                    <div class="hotel-image-section">
+                        <img src="images/hero-professional.png" 
+                             alt="Hotel reception with professional staff" 
+                             class="hotel-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="professionalform">
+        <div class="form-container" style="max-width: 800px;">
+            <h1 class="form-title">REQUEST A QUOTE</h1>
+            <form id="quote" action='zoho/forms/professionalquote.php' method='post'>
+                <div class="row justify-content-center g-3">
+                    <div class="col-12">
+                    <label for="dateInput" class="form-label">Select Date</label>
+                    <input type="date" class="form-control border-dark" id="dateInput" name="date-input">
+                </div>
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Full Name <span class="required">(Required)</span></label>
+                        <input type="text" class="form-control " id="name" name="full-name" placeholder="Full Name"
+                            required="" fdprocessedid="3ix9n">
+                        <div id="name-error"></div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <label for="company" class="form-label">Company/Business Name (if any)<span
+                                class="required">(Required)</span></label>
+                        <input type="text" class="form-control " id="company" name="business-name"
+                            placeholder="Business Name" required="" fdprocessedid="jk9dfb">
+                        <div id="company-error" style="color:red; display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center g-3">
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Contact Number <span
+                                class="required">(Required)</span></label>
+                        <input type="number" id="contact" name="contact" class="form-control "
+                            placeholder="Enter your contact number" maxlength="13" fdprocessedid="btcoo">
+                        <div id="contact-error" style="color:red; display:none;"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email <span class="required">(Required)</span></label>
+                        <input type="email" class="form-control " id="email" name="email" placeholder="Email"
+                            required="" fdprocessedid="hnzurf">
+                        <div id="email-error" style="color:red; display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center g-3">
+                    <div class="col-md-6">
+                        <label for="businessAddress" class="form-label">Business Address <span
+                                class="required">(Required)</span></label>
+                        <input type="text" class="form-control " id="address" name="business-address"
+                            placeholder="Location" required="" fdprocessedid="l2jxn">
+                        <div id="address-error" style="color:red; display:none;"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="businessDescription" class="form-label">Business Description<span
+                                class="required">(Required)</span></label>
+                        <input type="text" class="form-control " id="businessDescription" name="business-description"
+                            placeholder="Business Description" required="" fdprocessedid="770nwm">
+                        <div id="description-error" style="color:red; display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Professional Indemnity (PI) Required<span
+                                class="required">(Required)</span></label>
+                        <select id="piRequired" class="form-select" name="pi-required" required=""
+                            fdprocessedid="iycjf">
+                            <option value="">Please select</option>
+                            <option value="$1M">$1M</option>
+                            <option value="$2M">$2M</option>
+                            <option value="$5M">$5M</option>
+                            <option value="$10M">$10M</option>
+                            <option value="$20M">$20M</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Public Liability (PL) Required<span
+                                class="required">(Required)</span></label>
+                        <select id="plRequired" class="form-select" name="pl-required" required=""
+                            fdprocessedid="ludkwf">
+                            <option value="">Please select</option>
+                            <option value="$10M">$10M</option>
+                            <option value="$20M">$20M</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center g-3">
+                    <div class="col-md-12">
+                        <p>Upload your current insurance policy schedule for a free insurance review:</p>
+                        <label for="customFile" class="form-label"><b>Choose File</b></label>
+                        <input class="form-control " type="file" id="customFile" name="insurance-policy">
+                        <div id="customFile-error" style="color:red; display:none;"></div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- CAPTCHA -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="math_verification" class="form-label">Please solve: <span id="question">20 +
+                                8</span></label>
+                        <input type="text" class="form-control" id="math_verification" name="math_verification"
+                            placeholder="Enter your answer" required="" fdprocessedid="6dlkjq">
+                        <p id="math_verification-error" style="color: red; display: none;"></p>
+                        <input type="hidden" id="correct_answer" name="correct_answer">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                           <input type="hidden" id="form_start_time" name="form_start_time">
+     <script>
+  // Set form_start_time to the exact time (in seconds) when the page finishes loading
+  document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("form_start_time").value = Math.floor(Date.now() / 1000);
+  });
+  </script>
+                        <button type="submit" class="submit-btn btn-primary" fdprocessedid="d5sp4l">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- First Section - Professional Types -->
+    <section class="hoteltxt-section">
+        <div class="container mt-5">
+            <div class="row sect-2">
+                <h3 class="hoteltxt-heading text-center">Professional Indemnity Insurance for:</h3>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <ul class="hoteltxt-list">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>IT Contractors (Combined PI &amp;
+                            PL)s</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Engineers, Consultant &amp;
+                            Project managers</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Accountants, Bookkeepers &amp;
+                            Financial Planners</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Mortgage Brokers</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <ul class="hoteltxt-list">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Real Estate agents</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Building Architect</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Surveyors &amp; Property valuers
+                        </li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Recruitment Agents &amp; other
+                            professionals who provide</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>professional advice</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calltoaction-section">
+        <div class="container">
+            <div class="calltoaction-container">
+                <div class="calltoaction-content col-6">
+                    <h2 class="calltoaction-title">Our Toll free No :</h2>
+
+                    <a href="tel:1300170328" class="calltoaction-phone-button">
+                        <div class="calltoaction-phone-icon"><i class="fas fa-phone"></i></div>
+                        1300 170 328
+                    </a>
+
+                    <p class="calltoaction-description">
+                        Call us if you have any questions - We are happy to help you save the most money possible.
+                    </p>
+                </div>
+
+                <div class="calltoaction-image-container col-6">
+                    <img src="images/call-to-action.png" alt="Customer Service Representative"
+                        class="calltoaction-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Second Section - Main Content -->
+    <section class="hoteltxt-section-alt">
+        <div class="container-fluid">
+            <div class="container transport-op">
+                <div class="text-center">
+                    <h2 class="hoteltxt-heading">Professional Indemnity Insurance</h2>
+                </div>
+                <p class="hoteltxt-paragraph">iLink Insurance Brokers are a young and proactive team of Professional
+                    Indemnity Insurance brokers. At iLink Insurance Brokers we are dedicated to providing our clients
+                    with expert and innovative advice to service their precise insurance needs.</p>
+                <p class="hoteltxt-paragraph">We offer a wide range of General Insurance products and Risk Management
+                    solutions to clients. We know and study the General Insurance marketplace and its trends.</p>
+                <p class="hoteltxt-paragraph">At iLink Insurance Brokers, our clients are our number one priority and we
+                    place their interests first. We are dedicated to provide an 'end to end' insurance service to our
+                    clients by identifying and analysing the risk exposure of our clients and/or their business, to
+                    tailor insurance solutions accordingly.</p>
+
+                <div class="text-left">
+                    <h2 class="hoteltxt-heading">Why Choose iLink Insurance as your go to Professional Indemnity
+                        Insurance Broker?</h2>
+
+                    <ul class="hoteltxt-list">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>We provide a holistic service to
+                            all clients. An initial business planning session is essential to gain an insight into our
+                            client's business or personal requirements, followed by negotiations with insurers for the
+                            most appropriate insurance cover to best represent their needs.</li>
+
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>We work for you as your appointed
+                            agent to represent your interests first and foremost with your insurance arrangements, not
+                            the insurance company. Protecting your interests is our prime concern and we take personal
+                            care to structure your insurance cover to align with your insurance needs and budget. We
+                            have access to over 100 of Australia's leading insurers and underwriting agencies. As your
+                            professional broker, we represent you (the client), not the insurance company – to ensure
+                            that you get the best available products and services at the best available price to suit
+                            your insurance requirements.</li>
+
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>We don't claim to be big, but our
+                            goal is to exceed our client's expectations by offering tailored products with broad policy
+                            coverage at competitive price, and excellent professional service including claims services.
+                            We strongly believe that our role is not merely to sell insurances but to provide holistic
+                            services and advice to our clients to assist in managing risk exposure and ensuring peace of
+                            mind.</li>
+
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>We provide advice and assistance
+                            to make sure you are properly protected against any unexpected losses.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Section - Why Use Broker -->
+    <section class="hoteltxt-section">
+        <div class="container last mt-4">
+            <div class="">
+                <h3 class="hoteltxt-heading orange">Why Use Professional Indemnity Insurance Broker?</h3>
+                <p class="hoteltxt-paragraph">Insurance brokers are very different to insurance agents. As a broker, we
+                    act on behalf of you 'the client' to obtain the most appropriate and best value insurance for you
+                    and your needs.</p>
+                <p class="hoteltxt-paragraph">Through our membership of leading peak bodies, we have a close connection
+                    with the national insurance market. These memberships ensure we receive regular updates on industry
+                    trends, current benefits, exclusions and costs of competing policies, which means our clients are
+                    privy to all the information relevant to their options – upfront.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src='assets/form.js'></script>
+</body>
+
+</html>

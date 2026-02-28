@@ -1,0 +1,940 @@
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 02:37:11 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+DEBUG [1]: CLIENT -> SERVER: RCPT TO:<andirajugayathri92@gmail.com>
+
+DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+DEBUG [1]: CLIENT -> SERVER: DATA
+
+DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 09:37:11 +0000
+
+DEBUG [1]: CLIENT -> SERVER: To: Madhu <andirajugayathri92@gmail.com>
+
+DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: Subject: Test Email via GoDaddy SMTP
+
+DEBUG [1]: CLIENT -> SERVER: Message-ID: <cy1qn2MPxHOud0NfBxHz73Gi7q69i7HM6x8fAyr7bM@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_cy1qn2MPxHOud0NfBxHz73Gi7q69i7HM6x8fAyr7bM"
+
+DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_cy1qn2MPxHOud0NfBxHz73Gi7q69i7HM6x8fAyr7bM
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_cy1qn2MPxHOud0NfBxHz73Gi7q69i7HM6x8fAyr7bM
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a  gayatri <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP (localhost:25).</p>
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_cy1qn2MPxHOud0NfBxHz73Gi7q69i7HM6x8fAyr7bM--
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: .
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukJXD-0000000FHTX-2CNU
+
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+[SUCCESS] Email sent successfully to madhkunchala@gmail.com
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 02:52:16 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+DEBUG [1]: CLIENT -> SERVER: DATA
+
+DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 09:52:16 +0000
+
+DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: Subject: Test Email via GoDaddy SMTP
+
+DEBUG [1]: CLIENT -> SERVER: Message-ID: <dawzXYlS7FXJIi8T6ibOirlFVUsgTopT1bABilDN8U@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_dawzXYlS7FXJIi8T6ibOirlFVUsgTopT1bABilDN8U"
+
+DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_dawzXYlS7FXJIi8T6ibOirlFVUsgTopT1bABilDN8U
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_dawzXYlS7FXJIi8T6ibOirlFVUsgTopT1bABilDN8U
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a  gayatri <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP (localhost:25).</p>
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_dawzXYlS7FXJIi8T6ibOirlFVUsgTopT1bABilDN8U--
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: .
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukJlo-0000000FPlz-1xKM
+
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+[SUCCESS] Email sent successfully to madhkunchala@gmail.com
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 02:52:53 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+DEBUG [1]: CLIENT -> SERVER: DATA
+
+DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 09:52:53 +0000
+
+DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: Subject: Test Email via GoDaddy SMTP
+
+DEBUG [1]: CLIENT -> SERVER: Message-ID: <5dRTNIEV7oFYoyVY5BVN1cWojeXTsTzzv9uhJVAbrY@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_5dRTNIEV7oFYoyVY5BVN1cWojeXTsTzzv9uhJVAbrY"
+
+DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_5dRTNIEV7oFYoyVY5BVN1cWojeXTsTzzv9uhJVAbrY
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_5dRTNIEV7oFYoyVY5BVN1cWojeXTsTzzv9uhJVAbrY
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a  gayatri <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP (localhost:25).</p>
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_5dRTNIEV7oFYoyVY5BVN1cWojeXTsTzzv9uhJVAbrY--
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: .
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukJmP-0000000FQ5w-0TNl
+
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+[SUCCESS] Email sent successfully to madhkunchala@gmail.com
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:00:38 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+DEBUG [1]: CLIENT -> SERVER: DATA
+
+DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 10:00:38 +0000
+
+DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: Subject: otp test mail Test Email via GoDaddy SMTP
+
+DEBUG [1]: CLIENT -> SERVER: Message-ID: <uAzmBgEXzolbZsQHlOVvGDRtqJz24sFAkJSNVPbBxUY@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_uAzmBgEXzolbZsQHlOVvGDRtqJz24sFAkJSNVPbBxUY"
+
+DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_uAzmBgEXzolbZsQHlOVvGDRtqJz24sFAkJSNVPbBxUY
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_uAzmBgEXzolbZsQHlOVvGDRtqJz24sFAkJSNVPbBxUY
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a   <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP (localhost:25).</p>
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_uAzmBgEXzolbZsQHlOVvGDRtqJz24sFAkJSNVPbBxUY--
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: .
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukJtu-0000000FVLS-2nVN
+
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+[SUCCESS] Email sent successfully to madhkunchala@gmail.com
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:02:14 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+DEBUG [1]: CLIENT -> SERVER: DATA
+
+DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 10:02:14 +0000
+
+DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: Subject: otp test mail Test Email via GoDaddy SMTP
+
+DEBUG [1]: CLIENT -> SERVER: Message-ID: <FHLmNn8hNcRrL96vswtC9uCZdUuHl3fGImwPcrRabSo@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_FHLmNn8hNcRrL96vswtC9uCZdUuHl3fGImwPcrRabSo"
+
+DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_FHLmNn8hNcRrL96vswtC9uCZdUuHl3fGImwPcrRabSo
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_FHLmNn8hNcRrL96vswtC9uCZdUuHl3fGImwPcrRabSo
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a   <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP (localhost:25).</p>
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_FHLmNn8hNcRrL96vswtC9uCZdUuHl3fGImwPcrRabSo--
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: .
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukJvS-0000000FWX9-0KpA
+
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+[SUCCESS] Email sent successfully to madhkunchala@gmail.com
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:05:07 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+DEBUG [1]: CLIENT -> SERVER: DATA
+
+DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 10:05:07 +0000
+
+DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: Subject: otp test mail Test Email via GoDaddy SMTP
+
+DEBUG [1]: CLIENT -> SERVER: Message-ID: <9a83oFgz3io6MDL9GKvpAyDyvmzV2sBbsXkoE5GNyA0@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_9a83oFgz3io6MDL9GKvpAyDyvmzV2sBbsXkoE5GNyA0"
+
+DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_9a83oFgz3io6MDL9GKvpAyDyvmzV2sBbsXkoE5GNyA0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_9a83oFgz3io6MDL9GKvpAyDyvmzV2sBbsXkoE5GNyA0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a   <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP (localhost:25).</p>
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_9a83oFgz3io6MDL9GKvpAyDyvmzV2sBbsXkoE5GNyA0--
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: .
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukJyF-0000000FYLe-1tlt
+
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+[SUCCESS] Email sent successfully to madhkunchala@gmail.com
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:06:16 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+DEBUG [1]: CLIENT -> SERVER: DATA
+
+DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 10:06:16 +0000
+
+DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: Subject: otp test mail Test Email via GoDaddy SMTP
+
+DEBUG [1]: CLIENT -> SERVER: Message-ID: <tNNaKARKnuMS4drNRNVi1zSaPd8001SGtC4tPjP63cY@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_tNNaKARKnuMS4drNRNVi1zSaPd8001SGtC4tPjP63cY"
+
+DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_tNNaKARKnuMS4drNRNVi1zSaPd8001SGtC4tPjP63cY
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_tNNaKARKnuMS4drNRNVi1zSaPd8001SGtC4tPjP63cY
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a   <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP (localhost:25).</p>
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_tNNaKARKnuMS4drNRNVi1zSaPd8001SGtC4tPjP63cY--
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: .
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukJzM-0000000FYsk-12CB
+
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+[SUCCESS] Email sent successfully to madhkunchala@gmail.com
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:09:44 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+DEBUG [1]: CLIENT -> SERVER: DATA
+
+DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 10:09:44 +0000
+
+DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: Subject: otp test 587 mail Test Email via GoDaddy SMTP
+
+DEBUG [1]: CLIENT -> SERVER: Message-ID: <RxULIIWktQmneYKOsh8zQLCjhm7QS7PQFQ65At5kGA@ilinkinsurance.com.au>
+
+DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_RxULIIWktQmneYKOsh8zQLCjhm7QS7PQFQ65At5kGA"
+
+DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_RxULIIWktQmneYKOsh8zQLCjhm7QS7PQFQ65At5kGA
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_RxULIIWktQmneYKOsh8zQLCjhm7QS7PQFQ65At5kGA
+
+DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a   <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP (localhost:25).</p>
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: --b1=_RxULIIWktQmneYKOsh8zQLCjhm7QS7PQFQ65At5kGA--
+
+DEBUG [1]: CLIENT -> SERVER: 
+
+DEBUG [1]: CLIENT -> SERVER: .
+
+DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukK2i-0000000FaoE-23HM
+
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+[SUCCESS] Email sent successfully to madhkunchala@gmail.com
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:13:35 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: STARTTLS
+
+DEBUG [2]: SERVER -> CLIENT: 220 TLS go ahead
+
+DEBUG [2]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.phx3.secureserver.net' did not match expected CN=`localhost'
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT:  ¢dw@žQ»fì:ªq7Ÿžº?221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+DEBUG [1]: SMTP ERROR: QUIT command failed:  ¢dw@žQ»fì:ªq7Ÿžº?221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+DEBUG [2]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.phx3.secureserver.net' did not match expected CN=`localhost'
+[ERROR] Mailer Error: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.phx3.secureserver.net' did not match expected CN=`localhost' SMTP server error: QUIT command failed Detail: ¢dw@žQ»fì:ªq7Ÿžº?221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+Exception Message: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.phx3.secureserver.net' did not match expected CN=`localhost'
+DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:13:39 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+DEBUG [1]: CLIENT -> SERVER: STARTTLS
+
+DEBUG [2]: SERVER -> CLIENT: 220 TLS go ahead
+
+DEBUG [2]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.phx3.secureserver.net' did not match expected CN=`localhost'
+DEBUG [1]: CLIENT -> SERVER: QUIT
+
+DEBUG [2]: SERVER -> CLIENT:  ÆÑ[>KØµIìí`´˜†"221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+DEBUG [1]: SMTP ERROR: QUIT command failed:  ÆÑ[>KØµIìí`´˜†"221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+DEBUG [2]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.phx3.secureserver.net' did not match expected CN=`localhost'
+[ERROR] Mailer Error: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.phx3.secureserver.net' did not match expected CN=`localhost' SMTP server error: QUIT command failed Detail: ÆÑ[>KØµIìí`´˜†"221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+Exception Message: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): Peer certificate CN=`*.prod.phx3.secureserver.net' did not match expected CN=`localhost'
+DEBUG [1]: SMTP ERROR: Failed to connect to server:  (0)
+DEBUG [2]: SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[ERROR] Mailer Error: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server
+Exception Message: SMTP Error: Could not connect to SMTP host. Failed to connect to server
+DEBUG [1]: SMTP ERROR: Failed to connect to server:  (0)
+DEBUG [2]: SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[ERROR] Mailer Error: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server
+Exception Message: SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2025-08-08 10:49:42 DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:49:42 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+2025-08-08 10:49:42 DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+2025-08-08 10:49:42 DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+2025-08-08 10:49:42 DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: DATA
+
+2025-08-08 10:49:42 DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 10:49:42 +0000
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: Subject: Test Email via GoDaddy Local SMTP
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: Message-ID: <zhGwftSGbPImeX8YCsOhzgbVqfbuUcz6g1gbNIrlw@ilinkinsurance.com.au>
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_zhGwftSGbPImeX8YCsOhzgbVqfbuUcz6g1gbNIrlw"
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: --b1=_zhGwftSGbPImeX8YCsOhzgbVqfbuUcz6g1gbNIrlw
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: --b1=_zhGwftSGbPImeX8YCsOhzgbVqfbuUcz6g1gbNIrlw
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP.</p>
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: --b1=_zhGwftSGbPImeX8YCsOhzgbVqfbuUcz6g1gbNIrlw--
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:42 DEBUG [1]: CLIENT -> SERVER: .
+
+2025-08-08 10:49:43 DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukKfO-0000000G0M4-1YS3
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: QUIT
+
+2025-08-08 10:49:43 DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+2025-08-08 10:49:43 [SUCCESS] Email sent successfully to madhkunchala@gmail.com
+2025-08-08 10:49:43 DEBUG [2]: SERVER -> CLIENT: 220-p3plzcpnl508744.prod.phx3.secureserver.net ESMTP Exim 4.98.2 #2 Fri, 08 Aug 2025 03:49:43 -0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: EHLO ilinkinsurance.com.au
+
+2025-08-08 10:49:43 DEBUG [2]: SERVER -> CLIENT: 250-p3plzcpnl508744.prod.phx3.secureserver.net Hello ilinkinsurance.com.au [::1]
+250-SIZE 52428800
+250-LIMITS MAILMAX=10 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<info@ilinkinsurance.com.au>
+
+2025-08-08 10:49:43 DEBUG [2]: SERVER -> CLIENT: 250 OK
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: RCPT TO:<madhkunchala@gmail.com>
+
+2025-08-08 10:49:43 DEBUG [2]: SERVER -> CLIENT: 250 Accepted
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: DATA
+
+2025-08-08 10:49:43 DEBUG [2]: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: Date: Fri, 8 Aug 2025 10:49:43 +0000
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: To: Madhu <madhkunchala@gmail.com>
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: From: iLink Insurance <info@ilinkinsurance.com.au>
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: Subject: Test Email via GoDaddy Local SMTP
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: Message-ID: <gPsTILHwk6fxCCbJTrOszHlMnpaM5oVbIFhlPbvGPQ@ilinkinsurance.com.au>
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_gPsTILHwk6fxCCbJTrOszHlMnpaM5oVbIFhlPbvGPQ"
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: --b1=_gPsTILHwk6fxCCbJTrOszHlMnpaM5oVbIFhlPbvGPQ
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: Hello! This is a test email sent from PHPMailer using GoDaddy local SMTP.
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: --b1=_gPsTILHwk6fxCCbJTrOszHlMnpaM5oVbIFhlPbvGPQ
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: <h3>Hello!</h3><p>This is a <strong>test email</strong> sent from PHPMailer using GoDaddy local SMTP.</p>
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: --b1=_gPsTILHwk6fxCCbJTrOszHlMnpaM5oVbIFhlPbvGPQ--
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: 
+
+2025-08-08 10:49:43 DEBUG [1]: CLIENT -> SERVER: .
+
+2025-08-08 10:49:44 DEBUG [2]: SERVER -> CLIENT: 250 OK id=1ukKfP-0000000G0MF-26Ul
+
+2025-08-08 10:49:44 DEBUG [1]: CLIENT -> SERVER: QUIT
+
+2025-08-08 10:49:44 DEBUG [2]: SERVER -> CLIENT: 221 p3plzcpnl508744.prod.phx3.secureserver.net closing connection
+
+2025-08-08 10:49:44 [SUCCESS] Email sent successfully to madhkunchala@gmail.com
+2025-08-08 10:50:44 [START] Email sending attempt started
+2025-08-08 10:50:45 [SUCCESS] Email sent successfully
+2025-08-08 10:50:45 [END] Email sending attempt completed
+2025-08-08 10:50:46 [SUCCESS] Simple mail() function worked
+2025-08-08 10:51:33 [START] Email sending attempt started
+2025-08-08 10:51:34 [SUCCESS] Email sent successfully
+2025-08-08 10:51:34 [END] Email sending attempt completed
+2025-08-08 10:51:35 [SUCCESS] Simple mail() function worked
+2025-08-08 10:52:54 [START] Email sending attempt started
+2025-08-08 10:52:55 [SUCCESS] Email sent successfully
+2025-08-08 10:52:55 [END] Email sending attempt completed
+2025-08-08 10:52:56 [SUCCESS] Simple mail() function worked
+2025-08-08 10:54:12 [START] Email sending attempt started
+2025-08-08 10:54:13 [SUCCESS] Email sent successfully
+2025-08-08 10:54:13 [END] Email sending attempt completed
+2025-08-08 10:54:14 [SUCCESS] Simple mail() function worked
+2025-08-08 11:05:04 [START] Email sending attempt started
+2025-08-08 11:05:06 [SUCCESS] Email sent successfully
+2025-08-08 11:05:06 [END] Email sending attempt completed
+2025-08-08 11:05:07 [SUCCESS] Simple mail() function worked

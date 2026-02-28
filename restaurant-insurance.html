@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Insurance | iLink Insurance</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="includes.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-697F4NVYBQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-697F4NVYBQ');
+  gtag('config', 'AW-679447771');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1466671036845429');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1466671036845429&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+<!-- Quote Button -->
+<a href="#restaurantform" class="quote-button">REQUEST A QUOTE</a>
+    <div id="navbar"></div>
+
+     <section class="rest-hero-section">
+        
+        
+        <div class="container-fluid hotel-hero-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hotel-hero-content">
+                        <div class="hotel-rating">
+                            <div class="hotel-stars">
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                                <i class="fas fa-star hotel-star"></i>
+                            </div>
+                            <span class="hotel-rating-text">(4.9/5)</span>
+                        </div>
+                        
+                        <div class="hotel-subtitle">Restaurant Insurance</div>
+                        
+                        <h1 class="hotel-main-title">
+                            Restaurant Insurance <br>plans that work for you.
+                        </h1>
+                        
+                        <a href="#restaurantform" class="hotel-cta-button">Get Quote</a>
+                        
+                        <div class="hotel-features">
+                            <div class="hotel-feature-item">
+                                <div class="hotel-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="hotel-feature-text">Instant Quotes</p>
+                            </div>
+                            
+                            <div class="hotel-feature-item">
+                                <div class="hotel-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="hotel-feature-text">Hassle Free Process</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 p-0">
+                    <div class="hotel-image-section">
+                        <img src="images/hero-resta.png" 
+                             alt="Hotel reception with professional staff" 
+                             class="hotel-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="restaurantform">
+        <div class="form-container" style="max-width: 800px;">
+            <h1 class="form-title">REQUEST A QUOTE</h1>
+            <form id='quote' action="../zoho/forms/restaurantquote.php" method="post">
+                <div class="row justify-content-center g-3">
+                    <div class="col-md-6">
+                        <label for="full-name" class="form-label">Full Name <span
+                                class="required">*</span></label>
+                        <input type="text" id="full-name" name="full-name" class="form-control" placeholder="Full Name"
+                            required="" fdprocessedid="ghuaun">
+                        <div id="name-error" style="color:red; display:none;"></div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <label for="company-name" class="form-label">Company Name (if any)<span
+                                class="required">*</span></label>
+                        <input type="text" id="company-name" name="company-name" class="form-control"
+                            placeholder="Company Name " required="" fdprocessedid="zh24t">
+                        <div id="company-error" style="color:red; display:none;"></div>
+                    </div>
+                </div>
+                <div class="row justify-content-center g-3">
+                    <div class="col-md-6">
+                        <label for="contact" class="form-label">Contact Number <span
+                                class="required">*</span></label>
+                        <input type="number" id="contact" name="contact" class="form-control"
+                            placeholder="Enter your contact number" maxlength="13" fdprocessedid="wwa96j">
+                        <div id="phone-error" style="color:red; display:none;"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email "
+                            required="" fdprocessedid="8i1wm">
+                        <div id="email-error" style="color:red; display:none;"></div>
+                    </div>
+                </div>
+
+                <!-- Optional checkbox group with unique IDs -->
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <label class="form-label">Coverage Required (Select all that apply):</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="coverage[]"
+                                        id="property-damage" value="Property Damage">
+                                    <label class="form-check-label" for="property-damage">Property Damage</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="coverage[]"
+                                        id="business-interruption" value="Business Interruption">
+                                    <label class="form-check-label" for="business-interruption">Business
+                                        Interruption</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="coverage[]"
+                                        id="burglary-theft" value="Burglary/Theft">
+                                    <label class="form-check-label" for="burglary-theft">Burglary/Theft</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="coverage[]" id="cash"
+                                        value="Cash">
+                                    <label class="form-check-label" for="cash">Cash (money)</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input " name="coverage[]" id="plate-glass"
+                                        value="Plate Glass">
+                                    <label class="form-check-label" for="plate-glass">Plate Glass</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="coverage[]"
+                                        id="public-liability" value="Public and Products Liability">
+                                    <label class="form-check-label" for="public-liability">&nbsp;Public &amp; Products
+                                        Liability</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="coverage[]"
+                                        id="machinery-breakdown" value="Machinery Breakdown">
+                                    <label class="form-check-label" for="machinery-breakdown">&nbsp;Machinery
+                                        Breakdown</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAPTCHA -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="math_verification" class="form-label">Please solve: <span id="question">9 -
+                                    2</span></label>
+                            <input type="text" class="form-control" id="math_verification" name="math_verification"
+                                placeholder="Enter your answer" required="" fdprocessedid="khedak">
+                            <p id="math_verification-error" style="color: red; display: none;">Please solve the math
+                                problem correctly.</p>
+                            <input type="hidden" id="correct_answer" name="correct_answer" value="">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                               <input type="hidden" id="form_start_time" name="form_start_time">
+     <script>
+  // Set form_start_time to the exact time (in seconds) when the page finishes loading
+  document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("form_start_time").value = Math.floor(Date.now() / 1000);
+  });
+  </script>
+                            <button type="submit" class="submit-btn text-white" style="background-color:#E64A19"
+                                fdprocessedid="e9r92f">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
+        
+
+    </div>
+
+
+
+    <div class="container resttxt-container">
+        <h3 class="resttxt-heading">Restaurant Insurance</h3>
+        <p class="resttxt-paragraph">Restaurant insurance has a combination of policies that provides to protect
+            property, staff, and reputation from risks that are likely to be encountered by restaurants. Ilink insurance
+            helps to look into your business, to suggest which policies are critical to have and the ones you can avoid.
+            Ultimately it is important that you pay only for what is crucial and required by your restaurant business
+        </p>
+
+        <h3 class="resttxt-heading">Who needs restaurant insurance?</h3>
+        <p class="resttxt-paragraph">Restaurant owners, and food business operators whether dine-in or takeaway
+            businesses are recommended to have restaurant insurance. Depending on the nature of the food business, size,
+            location, and turnover, you can seek help from our insurance experts to get you the most suitable restaurant
+            insurance policy.</p>
+
+        <h3 class="resttxt-heading">When to take the insurance?</h3>
+        <p class="resttxt-paragraph">Wet floors, broken glass, or faults found in food served, are some aspects that are
+            common and real in the hospitality business. For the customer, it is a place to have food, but for the
+            restaurateurs, it is a daily business to handle food, logistics, food quality, staff, and customer service.
+            Given a such scenario, the restaurant business is vulnerable to risks, and so it is highly recommended to
+            take an insurance policy that can safeguard you and provide for costs when unforeseen accidents and claims
+            occur.</p>
+
+        <h3 class="resttxt-heading">Benefits of having the insurance</h3>
+        <p class="resttxt-paragraph">The restaurant business is high on investment business when it comes to property,
+            equipment, and also comes with risks as you deal with a number of customers on an everyday basis. Hence,
+            having well-designed restaurant insurance can help you cover and cater to sudden costs for property damage,
+            repair and replacement of equipment, customer/third party claims any such insured events.</p>
+        <p class="resttxt-paragraph">Review, upgrade, and renewals of policies every year, help you determine the risks,
+            estimate assets and accordingly decide on the right level of coverage.</p>
+
+        <h3 class="resttxt-heading resttxt-pb-3">What is covered under the insurance?</h3>
+        <ul class="resttxt-list">
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">1. Public &amp; product liability</h4>
+                <p class="resttxt-paragraph">Public liability insurance provides you a cover for a list of accidents
+                    from slips and falls to food poisoning and the claims done by a customer, supplier, or anyone else
+                    who has suffered an injury/ illness or loss due to such an occurrence. Public liability insurance
+                    not only provides cover for the compensations to be paid to the affected individual but also helps
+                    you to handle the legal and defense costs for claims for an insured event.</p>
+            </li>
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">2. Property insurance</h4>
+                <p class="resttxt-paragraph">Restaurant insurance for property provides a protective cover to your
+                    restaurant space whether owned/rented or taken for lease against fire, theft, or any damage. In
+                    comparison to the premiums paid, you end up saving on a lot of expenses for an insured event.</p>
+            </li>
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">3. Liquor liability insurance</h4>
+                <p class="resttxt-paragraph">Liquor liability insurance can be an add-on insurance saver, as it helps to
+                    cover any kind of damage to your property, or injuries and claims done by intoxicated customers.</p>
+            </li>
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">4. Business interruption insurance</h4>
+                <p class="resttxt-paragraph">Business interruption insurance is a policy that helps to claim for the
+                    loss due to interruptions in the restaurant business caused by natural calamities and unforeseen
+                    events that are beyond your control. It helps to cover the costs for food spoilage and provides to
+                    cover expenses such as wages or leasing costs for an insured event.</p>
+            </li>
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">5. Equipment breakdown insurance</h4>
+                <p class="resttxt-paragraph">A sudden equipment breakdown like that of cold storage can mean so much for
+                    a restaurant that relies on frozen foods. Equipment breakdown insurance provides a cover for the
+                    repair, loss, or replacement of damaged equipment. Although a common type of insurance, it is
+                    crucial for you to know the list of items that are eligible for a cover while taking one for your
+                    business. As an add-on to this, you can also get a cover for stock loss/food spoilage or
+                    deterioration depending on the size of your business activity.</p>
+            </li>
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">6. Worker's compensation insurance</h4>
+                <p class="resttxt-paragraph">Worker's compensation insurance is mandatory across Australia for all kinds
+                    of restaurant businesses. It provides for all the costs, where any of your staff falls sick or gets
+                    injured while at work.</p>
+            </li>
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">7. Theft insurance cover</h4>
+                <p class="resttxt-paragraph">Theft or attempted theft of the contents and stock of your restaurant, and
+                    employee dishonesty involving in fraudulent are aspects covered under the theft insurance cover.</p>
+            </li>
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">8. Cyber liability</h4>
+                <p class="resttxt-paragraph">Customer's personal and payment data can be prone to hacks through
+                    compromised Wi-Fi networks. A cyber threat and data breach can become expensive damage to your
+                    business and the repute. Cyber liability insurance can provide help cover costs related to data
+                    breaches and also protect you from customer sue.</p>
+            </li>
+            <li class="resttxt-list-item">
+                <h4 class="resttxt-subheading">9. Automobile liability insurance</h4>
+                <p class="resttxt-paragraph">in cases where your restaurant has its own chain of delivery service, you
+                    may need to have automobile liability insurance in place. This automobile insurance will help cover
+                    drivers for damages, medical expenses, and accidental claims. It is not applicable for restaurants
+                    that have a third-party outsourced for your food delivery services</p>
+            </li>
+        </ul>
+
+        <h3 class="resttxt-heading">How to renew restaurant insurance?</h3>
+        <p class="resttxt-paragraph">From friendly notifications on premium payments and due dates to suggestions on
+            policy upgrades/changes with every renewal cycle, ilink insurance can help you to carefully review your
+            restaurant insurance, and coverage levels, and professionally advise the best step forward.</p>
+
+        <h3 class="resttxt-heading">What is the claim process and what are the documents required?</h3>
+        <p class="resttxt-paragraph">Ilink insurance has been one of the most trusted insurance companies for its
+            customer service and continued support. When it comes to claiming process and getting the required documents
+            ready, it is important for any business to have an expert look into the nitty-gritty of the matter. We are a
+            team of expert insurance specialists, who have worked with a number of restaurant businesses across
+            Australia, helping them with their policies and claims.</p>
+        <p class="resttxt-paragraph">Helping you through the claim process for an insurance policy that you have taken
+            through us.</p>
+    </div>
+
+    <section class="hotelfeatures-section">
+        <div class="container">
+            <h2 class="hotelfeatures-title">What Can You Expect Under Restaurant Insurance?</h2>
+            <p class="hotelfeatures-subtitle">Specific, comprehensive, fast turnaround and instant cover </p>
+            <p class="hotelfeatures-description">Find excellent professional services provided by experts who have
+                complete knowledge of your business, and give cost-effective solutions. </p>
+
+            <div class="row hotelfeatures-row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="hotelfeatures-card">
+                        <img src="images/hotel-icon-1.png" alt="Property Insurance" class="hotelfeatures-icon"
+                            style="background-color: #ffebcc; border-radius: 10px; padding: 15px;">
+                        <h3 class="hotelfeatures-card-title">Property Insurance</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="hotelfeatures-card">
+                        <img src="images/hotel-icon-2.png" alt="Liability Insurance" class="hotelfeatures-icon"
+                            style="background-color: #e6e6ff; border-radius: 10px; padding: 15px;">
+                        <h3 class="hotelfeatures-card-title">Liability Insurance</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="hotelfeatures-card">
+                        <img src="images/hotel-icon-3.png" alt="Equipment/Asset Damage Cover" class="hotelfeatures-icon"
+                            style="background-color: #d9e6ff; border-radius: 10px; padding: 15px;">
+                        <h3 class="hotelfeatures-card-title">Equipment/Asset Damage<br>Cover</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="hotelfeatures-card">
+                        <img src="images/hotel-icon-4.png" alt="Business Interruption Insurance"
+                            class="hotelfeatures-icon"
+                            style="background-color: #e6fff2; border-radius: 10px; padding: 15px;">
+                        <h3 class="hotelfeatures-card-title">Business Interruption<br>Insurance</h3>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#restaurantform" style="text-decoration:none;" class="hotelfeatures-cta">GET QUOTE</a>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="container">
+            <h2 class="process-title">Our Process</h2>
+            <p class="process-subtitle">Accessible, Easy & Appropriate</p>
+
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="process-step-image">
+                        <img src="images/Step 1.png" alt="Step 1: Obtain a quick quote">
+
+                    </div>
+                    <h3 class="process-step-title">Obtain a quick quote</h3>
+                    <p class="process-step-text">Connect with an insurance expert, share your concerns and requirement,
+                        and get an initial quote.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="process-step-image">
+                        <img src="images/Step 2.png" alt="Step 2: Detailed consultation">
+
+                    </div>
+                    <h3 class="process-step-title">Detailed consultation</h3>
+                    <p class="process-step-text">We take time to understand your business and the associated risk
+                        factors, to then come up with a best suitable insurance.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="process-step-image">
+                        <img src="images/Step 3.png" alt="Step 3: Submit documents">
+
+                    </div>
+                    <h3 class="process-step-title">Submit documents</h3>
+                    <p class="process-step-text">Mail us a copy of all the pre-required documents. At ilink insurance,
+                        we keep your paperwork minimal and easy.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="process-step-image">
+                        <img src="images/Step 4.png" alt="Step 4: You are covered!">
+
+                    </div>
+                    <h3 class="process-step-title">You are covered!</h3>
+                    <p class="process-step-text">Broad policy coverage at a competitive price keeping your interest in
+                        mind delivered to you through a hassle-free process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyus-section">
+        <div class="container whyus-container">
+            <h2 class="whyus-title">Why Choose Us</h2>
+            <p class="whyus-subtitle">We have worked and supported an extensive portfolio of small and medium business
+                clients across Australia falling under the different hotel and hospitality businesses.</p>
+
+            <!-- Lines Container -->
+            <div class="whyus-lines-container">
+                <div class="whyus-line-1"></div>
+                <div class="whyus-line-2"></div>
+                <div class="whyus-line-3"></div>
+            </div>
+
+            <div class="whyus-layout">
+                <!-- Top Left Feature -->
+                <div class="whyus-feature whyus-top-left">
+                    <div class="whyus-icon-circle">
+                        <img width="60" src="images/whu-us-icon-1.png" alt="">
+                    </div>
+                    <h3 class="whyus-feature-title">Unique & up-to-date</h3>
+                    <p class="whyus-feature-description">We bring you tailored insurance plans that are up-to-date,
+                        benefitting your hotel business for its value and specific risks associated.</p>
+                </div>
+
+                <!-- Bottom Left Feature -->
+                <div class="whyus-feature whyus-bottom-left">
+                    <div class="whyus-icon-circle">
+                        <img width="60" src="images/why-us-icon-2.png" alt="">
+                    </div>
+                    <h3 class="whyus-feature-title">Best of premiums</h3>
+                    <p class="whyus-feature-description">A network of over 100+ APRA-authorized insurers enables us to
+                        bring you competitive plans, broad coverage, and premiums.</p>
+                </div>
+
+                <!-- Top Right Feature -->
+                <div class="whyus-feature whyus-top-right">
+                    <div class="whyus-icon-circle">
+                        <img width="60" src="images/why-us-icon-3.png" alt="">
+                    </div>
+                    <h3 class="whyus-feature-title">Expert to help</h3>
+                    <p class="whyus-feature-description">Access 100+ APRA authorized insurers and benefit from
+                        competitive plans, broad coverage, and suitable premiums </p>
+                </div>
+
+                <!-- Bottom Right Feature -->
+                <div class="whyus-feature whyus-bottom-right">
+                    <div class="whyus-icon-circle">
+                        <img width="60" src="images/why-us-icon-4.png" alt="">
+                    </div>
+                    <h3 class="whyus-feature-title">Pay for what's needed</h3>
+                    <p class="whyus-feature-description">Access to tailored insurance policies ensures to avoid
+                        expensive of overlaps and rightly caters to your business associated risks and needs </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h3 class="testimonials-title">TESTIMONIALS</h3>
+            <h2 class="testimonials-heading">What our customers have to say</h2>
+            <p class="testimonials-description">We aim to keep you and your business covered and protected from
+                potential business risks so that you can run your business uninterrupted</p>
+
+            <div class="testimonials-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">❞</div>
+                    <div class="testimonial-platform">
+                        <img src="images/Google Icon.png" alt="Google Logo">
+                    </div>
+                    <h3 class="testimonial-author">Joshua Savage</h3>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">I have dealt with Shalin and he has made the process stress-free, easy,
+                        and very responsive. Thank you.</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">❞</div>
+                    <div class="testimonial-platform">
+                        <img src="images/Google Icon.png" alt="Google Logo">
+                    </div>
+                    <h3 class="testimonial-author">Adrian Gadaldi</h3>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Friendly, fast, and good.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        1. How Much Insurance Does a Restaurant Need
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        The level of insurance coverage can largely vary from one business entity to the other. Your
+                        restaurant business size, nature of activities, and likely associated risks are a few that are
+                        considered while designing a restaurant insurance policy. Please get in touch with an insurance
+                        broker as they come with a deep understanding of every aspect connected to policies, premiums,
+                        and claims.
+                        <br> <br>
+                        For example, if you have rented or leased out a property for your restaurant business, there
+                        might be a minimum amount of glass cover and public liability insurance that your property owner
+                        may specify.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        2. What Type of Insurance Does a Restaurant Need
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Typically restaurant insurance will include the following types in consideration of your
+                        business size, turnover, and business needs.
+                        <ul>
+                            <li>Public liability</li>
+                            <li>Product liability</li>
+                            <li>Property insurance</li>
+                            <li>Equipment breakdown insurance</li>
+                            <li>Fire, theft, and other perils</li>
+                            <li>Worker’s compensation</li>
+                            <li>Business interruption insurance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+
+                        3. How Much Does Restaurant Insurance Cost
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        The cost of restaurant insurance can vary notably from one business entity to another. While one
+                        may spend approximately $110 per month and another may spend significantly more, depending on
+                        factors that include the below:
+                        <ul>
+                            <li>The size of your business</li>
+                            <li>Number of staff employed</li>
+                            <li>The type of restaurant business</li>
+                            <li>Location of your business</li>
+                            <li>The type of coverage you look for</li>
+                            <li>The level of cover</li>
+                            <li>Your claims history</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        4. Are Restaurant Business Insurance Claims Taxable Income
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Insurance claims are generally claimed against a loss/damage and tend to be seen as an ordinary
+                        income. However, there are a lot of aspects that determine whether the said claim falls under
+                        taxable income or not. How an insurance payout is treated depends on what the payout is for, how
+                        the insurance is used, the amount of payout, the kind of property (owned/rented), and its value.
+                        <br><br>
+                        Claims and their accounting mandates can be tricky with several factors in consideration. You
+                        may speak to our insurance expert to rightly understand your situation and guide you through the
+                        process.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src='assets/form.js'></script>
+</body>
+
+</html>

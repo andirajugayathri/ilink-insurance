@@ -1,0 +1,3 @@
+[17-Feb-2026 07:30:19 UTC] Zoho HTTP Error (202): {"data":[{"code":"INVALID_DATA","details":{"maximum_length":80,"api_name":"Last_Name"},"message":"invalid data","status":"error"}]}
+[17-Feb-2026 08:35:58 UTC] Error refreshing token: {"error_description":"You have made too many requests continuously. Please try again after some time.","error":"Access Denied","status":"failure"}
+[17-Feb-2026 08:35:58 UTC] Zoho Error: Access token missing

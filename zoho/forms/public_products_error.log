@@ -1,0 +1,17 @@
+[29-Jan-2026 07:48:45 UTC] DB ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coverage_required' in 'INSERT INTO'
+[29-Jan-2026 07:48:45 UTC] DATA: {"Last_Name":"test","Company":"test","Phone":"987654321","Email":"test@gmail.clom","Address_Line1":"test","Description":"test","No_of_Employees":"76","Estimated_Annual_Turnover_For_The_Business":"65","Payments_to_Subcontractors":"34r","Type_of_Coverage_required":"Public and Products Liability, Personal Accident & Sickness","Enquiry_Source":"ILink Website - Call Back Form","Product_Inquiry":"Public and Product Liability Insurance","Layout":{"name":"Website","id":"62950000001318018"},"Owner":{"name":"Shalin Shah","id":"62950000000229001"}}
+[29-Jan-2026 07:49:58 UTC] DB ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coverage_required' in 'INSERT INTO'
+[29-Jan-2026 07:49:58 UTC] DATA: {"Last_Name":"test","Company":"test","Phone":"987654321","Email":"test@gmail.clom","Address_Line1":"test","Description":"test","No_of_Employees":"76","Estimated_Annual_Turnover_For_The_Business":"65","Payments_to_Subcontractors":"34r","Type_of_Coverage_required":"Public and Products Liability, Personal Accident & Sickness","Enquiry_Source":"ILink Website - Call Back Form","Product_Inquiry":"Public and Product Liability Insurance","Layout":{"name":"Website","id":"62950000001318018"},"Owner":{"name":"Shalin Shah","id":"62950000000229001"}}
+[08-Feb-2026 12:30:03 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int - string in /home/ukotfo8i1tl9/public_html/zoho/forms/publicandproductliabilityquote.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/ukotfo8i1tl9/public_html/zoho/forms/publicandproductliabilityquote.php on line 20
+[14-Feb-2026 10:59:21 UTC] BOT BLOCKED: Fast submit | IP: 185.170.167.18
+[17-Feb-2026 07:30:09 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int - string in /home/ukotfo8i1tl9/public_html/zoho/forms/publicandproductliabilityquote.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/ukotfo8i1tl9/public_html/zoho/forms/publicandproductliabilityquote.php on line 20
+[17-Feb-2026 08:35:49 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int - string in /home/ukotfo8i1tl9/public_html/zoho/forms/publicandproductliabilityquote.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/ukotfo8i1tl9/public_html/zoho/forms/publicandproductliabilityquote.php on line 20
