@@ -1,0 +1,1675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public & Products Liability Insurance | iLink Insurance</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- LineIcons (if needed, adding similar to other pages) -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    
+    <!-- External Styles -->
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="includes.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-697F4NVYBQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-697F4NVYBQ");
+      gtag("config", "AW-679447771");
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1466671036845429");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1466671036845429&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+      /* --- GLOBAL CONSTANTS & RESETS FOR NEW DESIGN --- */
+      :root {
+        --ilnk-pl-primary:#00143F;
+        --ilnk-pl-secondary: #FF6B00;
+        --ilnk-pl-text: #333333;
+        --ilnk-pl-bg: #FFFFFF;
+        --ilnk-pl-gray-bg: #F9FAFB;
+      }
+      
+      .ilnk-pl-wrapper {
+        font-family: 'Inter', sans-serif;
+        color: var(--ilnk-pl-text);
+      }
+
+      .ilnk-pl-wrapper h1, .ilnk-pl-wrapper h2, .ilnk-pl-wrapper h3, .ilnk-pl-wrapper h4 {
+        color: var(--ilnk-pl-primary);
+        font-weight: 700;
+      }
+
+      /* Base Buttons */
+      .ilnk-pl-btn-primary {
+        background-color: var(--ilnk-pl-secondary);
+        color: white;
+        border: 2px solid var(--ilnk-pl-secondary);
+        padding: 10px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-transform: none;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .ilnk-pl-btn-primary:hover {
+        background-color: #FF581D;
+        border-color: #FF581D;
+        color: white;
+      }
+      
+      .ilnk-pl-btn-outline {
+        background-color: transparent;
+        color: var(--ilnk-pl-secondary);
+        border: 1px solid var(--ilnk-pl-secondary);
+        padding: 10px 24px;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: none;
+      }
+      .ilnk-pl-btn-outline:hover {
+        background-color: rgba(255, 107, 0, 0.05);
+        color: var(--ilnk-pl-secondary);
+      }
+
+      /* --- HERO SECTION --- */
+      .ilnk-pl-hero {
+        position: relative;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+      .ilnk-pl-hero-bg-left {
+        position: absolute;
+        top: 0; left: 0; bottom: 0;
+        width: 50%;
+        background-color: #123972;
+        z-index: 1;
+      }
+      .ilnk-pl-hero-bg-right {
+        position: absolute;
+        top: 0; right: 0; bottom: 0;
+        width: 50%;
+        background-image: url('images/public-and-products.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+      }
+      .ilnk-pl-hero > .container {
+        position: relative;
+        z-index: 2;
+      }
+      
+      .ilnk-pl-hero-content {
+        background: white;
+        padding: 50px 40px;
+        border-radius: 12px;
+        max-width: 500px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        margin: 40px 0;
+      }
+
+      .ilnk-pl-hero-title {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        color: #0A0A0A;
+        font-weight: 800;
+      }
+
+      .ilnk-pl-hero-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px 0;
+      }
+      .ilnk-pl-hero-features li {
+        font-size: 1rem;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        color: #364153;
+      }
+      .ilnk-pl-hero-features li i {
+        color: var(--ilnk-pl-secondary);
+        font-size: 1.1rem;
+        margin-right: 15px;
+      }
+
+      .ilnk-pl-hero-actions {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+      }
+
+      .ilnk-pl-rating {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .ilnk-pl-rating-stars {
+        color: #FFC107;
+        font-size: 1.2rem;
+      }
+      .ilnk-pl-rating-text {
+        font-weight: 700;
+        color: #0A0A0A;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 991px) {
+        .ilnk-pl-hero-bg-left {
+          width: 100%;
+        }
+        .ilnk-pl-hero-bg-right {
+          display: none;
+        }
+        .ilnk-pl-hero-content {
+          margin: 40px auto;
+        }
+      }
+      @media (max-width: 768px) {
+        .ilnk-pl-hero {
+          min-height: auto;
+        }
+        .ilnk-pl-hero-content {
+          padding: 30px 20px;
+        }
+        .ilnk-pl-hero-title {
+          font-size: 2rem;
+        }
+        .ilnk-pl-hero-actions {
+          flex-direction: column;
+        }
+        .ilnk-pl-btn-primary, .ilnk-pl-btn-outline {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      /* --- PARTNERS SECTION --- */
+      .ilnk-pl-partners {
+        padding: 60px 0;
+        background-color: white;
+      }
+      .ilnk-pl-partners-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      .ilnk-pl-partners-title-wrapper {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+      }
+      .ilnk-pl-partners-accent {
+        width: 4px;
+        height: 50px;
+        background-color: #FF6B00;
+        margin-right: 15px;
+      }
+      .ilnk-pl-partners-title {
+        font-size: 20px;
+        font-weight: 800;
+        color: #00143F;
+        line-height: 1.3;
+        margin: 0;
+        text-align: left;
+        text-transform: none;
+        letter-spacing: normal;
+      }
+      .ilnk-pl-partners-logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+      }
+      .ilnk-pl-partner-logo {
+        max-width: 110px;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+      }
+      .ilnk-pl-partner-logo:hover {
+        opacity: 1;
+      }
+
+      /* --- INFO BANNER --- */
+      .ilnk-pl-info-banner {
+        padding: 20px 0 60px 0;
+        background-color: transparent;
+      }
+      .ilnk-pl-info-card {
+        background: linear-gradient(90deg, rgba(255, 88, 29, 0.9) 0%, rgba(250, 81, 15, 0.6) 50%, rgba(235, 93, 32, 0.9) 100%);
+
+        border-radius: 20px;
+        padding: 60px 40px;
+        color: white;
+        text-align: center;
+      }
+      .ilnk-pl-info-card h2 {
+        color: white;
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+      .ilnk-pl-info-card p {
+        color: white;
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 0;
+        margin: 0 auto;
+        opacity: 0.95;
+      }
+
+      /* --- COVERAGE CARDS --- */
+      .ilnk-pl-coverage {
+        padding: 60px 0;
+        background-color: #FFF9F5; /* Warm off-white */
+      }
+      .ilnk-pl-coverage-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .ilnk-pl-coverage-header h2 {
+        font-size: 2.6rem;
+        color: #00143F;
+        font-weight: 800;
+        margin-bottom: 15px;
+      }
+      .ilnk-pl-coverage-header p {
+        color: #5A5A5A;
+        font-size: 1rem;
+        margin: 0 auto;
+      }
+      .ilnk-pl-card {
+        background: white;
+        border-radius: 12px;
+        padding: 40px 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+      .ilnk-pl-card-title {
+        font-size: 20px;
+        color: #00143F;
+        font-weight: 700;
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 15px;
+      }
+      /* Custom underline mimicking the design (long line, gap, small dot/dash) */
+      .ilnk-pl-card-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 48px;
+        height: 3px;
+        background: linear-gradient(to right, #FF6B00 0%, #FF6B00 75%, transparent 75%, transparent 85%, #FF6B00 85%, #FF6B00 100%);
+      }
+      .ilnk-pl-card-text {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #5A5A5A;
+      }
+      .ilnk-pl-coverage-btn-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 991px) {
+        .ilnk-pl-partners-container {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 30px;
+        }
+        .ilnk-pl-partners-logos {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+        }
+        .ilnk-pl-coverage {
+          padding: 50px 0;
+        }
+      }
+      @media (max-width: 768px) {
+        .ilnk-pl-partners-grid {
+          gap: 30px;
+        }
+        .ilnk-pl-coverage {
+          padding: 50px 0;
+        }
+        .ilnk-pl-card {
+          margin-bottom: 30px;
+        }
+      }
+
+      /* --- QUOTE FORM SECTION --- */
+      .ilnk-pl-quote-sec {
+        padding: 60px 0;
+        background-color: #F9FAFB; /* Very light gray */
+      }
+      .ilnk-pl-quote-sec-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .ilnk-pl-quote-sec-header h2 {
+        font-size: 2.8rem;
+        color: #00143F;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+      .ilnk-pl-quote-sec-header p {
+        color: #5A5A5A;
+        font-size: 1rem;
+      }
+      .ilnk-pl-quote-card {
+        background: white;
+        padding: 50px 60px;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+      }
+      .ilnk-pl-quote-form .form-label {
+        font-weight: 600;
+        color: #00143F;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        display: block;
+      }
+      .ilnk-pl-quote-form .form-control {
+        border-radius: 8px;
+        padding: 10px 15px;
+        background-color: #F3F4F6;
+        border: 1px solid transparent;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        color: #333;
+      }
+      .ilnk-pl-quote-form .form-control:focus {
+        background-color: white;
+        border-color: rgba(26,54,93,0.3);
+        box-shadow: 0 0 0 0.2rem rgba(26,54,93,0.1);
+      }
+      .ilnk-pl-quote-submit {
+        background-color: #FF6B00;
+        color: white;
+        border: none;
+        padding: 16px;
+        width: 100%;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        transition: 0.3s;
+        margin-top: 10px;
+      }
+      .ilnk-pl-quote-submit:hover {
+        background-color: #FF581D;
+      }
+      .ilnk-pl-quote-trust {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+      .ilnk-pl-quote-trust-item {
+        display: flex;
+        align-items: center;
+        font-size: 0.85rem;
+        color: #5A5A5A;
+      }
+      .ilnk-pl-quote-trust-item i {
+        color: #2BA956;
+        margin-right: 8px;
+        font-size: 1.1rem;
+      }
+
+      /* --- WHY CHOOSE US SECTION --- */
+      .ilnk-pl-why {
+        padding: 60px 0;
+        background-color: white;
+      }
+      .ilnk-pl-why-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .ilnk-pl-why-header h2 {
+        color: #00143F;
+        font-size: 2.6rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+      }
+      .ilnk-pl-why-header p {
+        color: #5A5A5A;
+        font-size: 1rem;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      .ilnk-pl-why .row {
+        gap: 20px 0;
+      }
+      .ilnk-pl-feature {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0px 2px 8px 0px #63636333;
+        border: 1px solid #f2f2f2;
+        transition: transform 0.3s ease;
+        height: 100%;
+      }
+      .ilnk-pl-feature:hover {
+        box-shadow: 0px 2px 8px 0px #63636333;
+      }
+      .ilnk-pl-feature-icon {
+        background-color: #F4F7FF;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 1px #0000000D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        color: #FF7F05;
+        margin-right: 25px;
+        flex-shrink: 0;
+      }
+      .ilnk-pl-feature-content h3 {
+        color: #00143F;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .ilnk-pl-feature-content p {
+        color: #000000;
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .ilnk-pl-quote-card {
+          padding: 30px 20px;
+        }
+        .ilnk-pl-why {
+          padding: 50px 0;
+        }
+      }
+
+      /* --- INDUSTRIES SECTION --- */
+      .ilnk-pl-industries {
+        padding: 60px 0;
+        background-color: #E6F7FB80;
+        text-align: center;
+      }
+      .ilnk-pl-industries h2 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        color: var(--ilnk-pl-primary);
+        font-weight: 800;
+      }
+      .ilnk-pl-industries .ilnk-pl-section-desc {
+        color: #5A5A5A;
+        font-size: 1rem;
+        margin: 0 auto 50px auto;
+        line-height: 1.6;
+      }
+      .ilnk-pl-industry-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .ilnk-pl-industry-card {
+        background: #FF7F0514; 
+        padding: 30px 15px;
+        border-radius: 12px;
+        width: 140px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        text-decoration: none;
+      }
+      .ilnk-pl-industry-icon {
+        font-size: 2.2rem;
+        color: var(--ilnk-pl-secondary);
+        margin-bottom: 15px;
+        line-height: 1;
+      }
+      .ilnk-pl-industry-icon.fa-solid {
+        -webkit-text-stroke: 1.5px var(--ilnk-pl-secondary);
+        color: transparent;
+      }
+      .ilnk-pl-industry-name {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #5A5A5A;
+        text-align: center;
+        line-height: 1.3;
+      }
+
+      @media (max-width: 991px) {
+        .ilnk-pl-industry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .ilnk-pl-industry-card {
+            width: 100%;
+        }
+      }
+      @media (max-width: 576px) {
+        .ilnk-pl-industry-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* --- HOW IT WORKS SECTION --- */
+      .ilnk-pl-process {
+        padding-top: 60px;
+        background-color: white;
+        text-align: center;
+      }
+      .ilnk-pl-process h2 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        color: var(--ilnk-pl-primary);
+        font-weight: 800;
+      }
+      .ilnk-pl-process-steps {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+      }
+      .ilnk-pl-process-steps::before {
+        content: '';
+        position: absolute;
+        top: 35px;
+        left: 10%;
+        right: 10%;
+        height: 1px;
+        background-color: #e0e0e0;
+        z-index: 1;
+      }
+      .ilnk-pl-step {
+        position: relative;
+        z-index: 2;
+        width: 25%;
+        padding: 0 15px;
+      }
+      .ilnk-pl-step-icon-wrapper {
+        width: 70px;
+        height: 70px;
+        background-color: var(--ilnk-pl-secondary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 25px auto;
+        position: relative;
+      }
+      .ilnk-pl-step-icon {
+        color: white;
+        font-size: 1.8rem;
+      }
+      .ilnk-pl-step-badge {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        width: 22px;
+        height: 22px;
+        background-color: white;
+        color: var(--ilnk-pl-secondary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: 700;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      }
+      .ilnk-pl-step h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        color: #0A0A0A;
+      }
+      .ilnk-pl-step p {
+        color: #5A5A5A;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 0 auto;
+      }
+
+      /* --- RELATED SERVICES --- */
+      .ilnk-pl-related {
+        padding: 60px 0;
+        background-color: white;
+      }
+      .ilnk-pl-related h2 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: var(--ilnk-pl-primary);
+        font-weight: 800;
+      }
+      .ilnk-pl-related-card {
+        background: white;
+        border-radius: 12px;
+        border: 1px solid #EAEAEA;
+        padding: 40px 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .ilnk-pl-related-icon {
+        width: 55px;
+        height: 55px;
+        background-color: #FF7F0514;
+        color: var(--ilnk-pl-secondary);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+      }
+      .ilnk-pl-related-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .ilnk-pl-related-content h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #0A0A0A;
+        font-weight: 700;
+      }
+      .ilnk-pl-related-content p {
+        color: #5A5A5A;
+        font-size: 1rem;
+        line-height: 1.6;
+        flex-grow: 1;
+      }
+      .ilnk-pl-related-link {
+        color: var(--ilnk-pl-secondary);
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+      .ilnk-pl-related-link:hover {
+        color: #FF581D;
+      }
+      .ilnk-pl-related-link i {
+        margin-left: 8px;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 991px) {
+        .ilnk-pl-process-steps::before {
+          display: none;
+        }
+        .ilnk-pl-step {
+          width: 50%;
+          margin-bottom: 40px;
+        }
+      }
+      @media (max-width: 576px) {
+        .ilnk-pl-step {
+          width: 100%;
+        }
+      }
+
+      /* --- CTA BANNER --- */
+      .ilnk-pl-cta {
+        padding: 60px 0;
+        background-image: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), url('images/protect-your-business.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: #0A0A0A;
+        color: white;
+        text-align: center;
+      }
+      .ilnk-pl-cta h2 {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 15px;
+        font-weight: 800;
+      }
+      .ilnk-pl-cta p {
+        font-size: 1rem;
+        margin-bottom: 40px;
+        opacity: 0.95;
+        color: #f8f9fa;
+      }
+
+      /* --- TESTIMONIALS --- */
+      .ilnk-pl-testimonials {
+        padding: 60px 0;
+        background-color: var(--ilnk-pl-gray-bg);
+      }
+      .ilnk-pl-testimonials h2 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 50px;
+        color: var(--ilnk-pl-primary);
+        font-weight: 800;
+      }
+      .ilnk-pl-testi-card {
+        background: white;
+        padding: 40px 30px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .ilnk-pl-testi-stars {
+        color: #FFC107;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+      }
+      .ilnk-pl-testi-quote {
+        font-size: 1rem;
+        font-style: italic;
+        line-height: 1.6;
+        color: #364153;
+        flex-grow: 1;
+      }
+      .ilnk-pl-testi-divider {
+        border-top: 1px solid #EAEAEA;
+        margin-bottom: 20px;
+      }
+      .ilnk-pl-testi-author {
+        display: block;
+      }
+      .ilnk-pl-testi-name {
+        font-weight: 800;
+        color: #0A0A0A;
+        margin-bottom: 5px;
+        font-size: 1rem;
+      }
+      .ilnk-pl-testi-company {
+        font-size: 14px;
+        color: #4A5565;
+      }
+      .ilnk-pl-carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 30px;
+      }
+      .ilnk-pl-carousel-dot {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 50% !important;
+        background-color: #D1D5DB !important;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-indent: -999px;
+      }
+      .ilnk-pl-carousel-dot.active {
+        background-color: var(--ilnk-pl-secondary) !important;
+      }
+
+      /* --- FAQ SECTION --- */
+      .ilnk-pl-faq {
+        padding: 60px 0;
+        background-color: white;
+      }
+      .ilnk-pl-faq h2 {
+        text-align: center;
+        font-size: 40px;
+        color: var(--ilnk-pl-primary);
+        font-weight: 800;
+      }
+      .ilnk-pl-accordion .accordion-item {
+        border: 1px solid #E5E7EB;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: #FF7F050D;
+        box-shadow: none;
+      }
+      .ilnk-pl-accordion .accordion-button {
+        font-weight: 700;
+        padding: 15px 25px;
+        color: #101828;
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 1rem;
+      }
+      .ilnk-pl-accordion .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: var(--ilnk-pl-secondary);
+        box-shadow: none;
+      }
+      .ilnk-pl-accordion .accordion-button::after {
+        background-size: 1rem;
+      }
+      .ilnk-pl-accordion .accordion-body {
+        background-color: transparent;
+        padding: 0 25px 25px 25px;
+        color: #364153;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 991px) {
+        .ilnk-pl-process-steps::before {
+          display: none;
+        }
+        .ilnk-pl-step {
+          width: 50%;
+          margin-bottom: 40px;
+        }
+      }
+      @media (max-width: 576px) {
+        .ilnk-pl-step {
+          width: 100%;
+        }
+      }
+      /* --- CUSTOM HEADER FOR THIS PAGE --- */
+      .ilnk-pl-topbar {
+        background-color: var(--ilnk-pl-primary);
+        color: white;
+        padding: 10px 0;
+        font-size: 0.9rem;
+      }
+      .ilnk-pl-topbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        font-weight: 500;
+      }
+      .ilnk-pl-topbar-right {
+        text-align: right;
+      }
+      .ilnk-pl-topbar-right a {
+        margin-left: 15px;
+        margin-right: 0;
+        font-size: 1.1rem;
+      }
+      .ilnk-pl-header {
+        background-color: white;
+        padding: 15px 0;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        z-index: 1000;
+      }
+      .ilnk-pl-header .navbar-brand img {
+        height: 55px;
+      }
+      .ilnk-pl-nav-link {
+        color: #5A5A5A;
+        font-weight: 600;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+      }
+      .ilnk-pl-nav-link:hover {
+        color: var(--ilnk-pl-secondary);
+      }
+      .ilnk-pl-nav-link i {
+        font-size: 0.75rem;
+        margin-left: 5px;
+        vertical-align: middle;
+      }
+      .ilnk-pl-header-btn {
+        background-color: var(--ilnk-pl-secondary);
+        color: white;
+        padding: 12px 28px;
+        border-radius: 6px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      .ilnk-pl-header-btn:hover {
+        background-color: #FF581D;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Global Header Elements -->
+    <!-- <a href="#ilink-pl-quote-form" class="quote-button">REQUEST A QUOTE</a> -->
+    <div class="ilnk-pl-topbar d-none d-lg-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <a href="mailto:info@ilinkinsurance.com.au"><i class="fa-regular fa-envelope me-2"></i>info@ilinkinsurance.com.au</a>
+            <span class="text-white-50 mx-2">|</span>
+            <a href="tel:1300170328"><i class="fa-solid fa-phone me-2"></i>1300 170 328</a>
+          </div>
+          <div class="col-md-6 ilnk-pl-topbar-right">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <header class="ilnk-pl-header sticky-top">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="index.html" class="navbar-brand">
+            <img src="images/logo.webp" alt="iLink Insurance" onerror="this.src='https://via.placeholder.com/150x50?text=iLink+Insurance'">
+          </a>
+          
+          <nav class="d-none d-lg-flex align-items-center">
+            <a href="index.html" class="ilnk-pl-nav-link">HOME</a>
+            <a href="about.html" class="ilnk-pl-nav-link">ABOUT US</a>
+            <a href="#" class="ilnk-pl-nav-link">PRODUCTS <i class="fa-solid fa-caret-down"></i></a>
+            <a href="#" class="ilnk-pl-nav-link">DOCUMENTS <i class="fa-solid fa-caret-down"></i></a>
+            <a href="#" class="ilnk-pl-nav-link">BLOG <i class="fa-solid fa-caret-down"></i></a>
+            <a href="contact.html" class="ilnk-pl-nav-link">CONTACT US</a>
+          </nav>
+          
+          <div class="d-none d-lg-block">
+            <a href="#ilink-pl-quote-form" class="ilnk-pl-header-btn">Get A Quote</a>
+          </div>
+          
+          <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+            <i class="fa-solid fa-bars fs-2 text-dark"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="ilnk-pl-wrapper">
+      
+      <!-- HERO SECTION -->
+      <section class="ilnk-pl-hero">
+        <div class="ilnk-pl-hero-bg-left"></div>
+        <div class="ilnk-pl-hero-bg-right"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-8">
+              <div class="ilnk-pl-hero-content">
+                <h1 class="ilnk-pl-hero-title">Public & Products<br>Liability Insurance</h1>
+                
+                <ul class="ilnk-pl-hero-features">
+                  <li><i class="fa-regular fa-circle-check"></i> Competitive premiums</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Trusted Australian insurers</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Fast claims support</li>
+                </ul>
+                
+                <div class="ilnk-pl-hero-actions">
+                  <a href="#ilink-pl-quote-form" class="ilnk-pl-btn-primary">Get a Quote</a>
+                  <a href="tel:1300170328" class="ilnk-pl-btn-outline">Speak to an Expert</a>
+                </div>
+                
+                <div class="ilnk-pl-rating">
+                  <div class="ilnk-pl-rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="ilnk-pl-rating-text">4.8/5 Customer Rating</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARTNERS SECTION -->
+      <section class="ilnk-pl-partners">
+        <div class="container">
+          <div class="ilnk-pl-partners-container">
+            <div class="ilnk-pl-partners-title-wrapper">
+              <div class="ilnk-pl-partners-accent"></div>
+              <h2 class="ilnk-pl-partners-title">Trusted<br>Insurance Partners</h2>
+            </div>
+            <div class="ilnk-pl-partners-logos">
+              <img src="images/trusted-logos.png" alt="Korum" class="ilnk-pl-partner-logo" onerror="this.src='https://via.placeholder.com/110x40?text=KORUM'" />
+              <img src="images/trusted-logos.png" alt="Korum" class="ilnk-pl-partner-logo" onerror="this.src='https://via.placeholder.com/110x40?text=KORUM'" />
+              <img src="images/trusted-logos.png" alt="Medusis" class="ilnk-pl-partner-logo" onerror="this.src='https://via.placeholder.com/110x40?text=MEDUSIS'" />
+              <img src="images/trusted-logos.png" alt="Encore" class="ilnk-pl-partner-logo" onerror="this.src='https://via.placeholder.com/110x40?text=ENCORE'" />
+              <img src="images/trusted-logos.png" alt="Korum" class="ilnk-pl-partner-logo" onerror="this.src='https://via.placeholder.com/110x40?text=KORUM'" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT IS BUSINESS INSURANCE -->
+      <section class="ilnk-pl-info-banner">
+        <div class="container">
+          <div class="ilnk-pl-info-card">
+            <h2>What Is Business Insurance</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT DOES THIS INSURANCE COVER -->
+      <section class="ilnk-pl-coverage">
+        <div class="container">
+          <div class="ilnk-pl-coverage-header">
+            <h2>What Does This Insurance Cover</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+          </div>
+          <div class="row">
+            
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="ilnk-pl-card">
+                <h3 class="ilnk-pl-card-title">Public Liability Insurance</h3>
+                <p class="ilnk-pl-card-text">Protection against injury or property damage to Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="ilnk-pl-card">
+                <h3 class="ilnk-pl-card-title">Public Liability Insurance</h3>
+                <p class="ilnk-pl-card-text">Protection against injury or property damage to Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="ilnk-pl-card">
+                <h3 class="ilnk-pl-card-title">Public Liability Insurance</h3>
+                <p class="ilnk-pl-card-text">Protection against injury or property damage to Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="ilnk-pl-coverage-btn-container">
+            <a href="#ilink-pl-quote-form" class="ilnk-pl-btn-primary">Get AQuote</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUOTE FORM SECTION -->
+      <section class="ilnk-pl-quote-sec" id="ilink-pl-quote-form">
+        <div class="container">
+          <div class="ilnk-pl-quote-sec-header">
+            <h2>Get a Free Quote</h2>
+            <p>Fill in your details and we'll get back to you with competitive insurance quotes</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <div class="ilnk-pl-quote-card">
+                <form class="ilnk-pl-quote-form" action="zoho/forms/publicandproductliabilityquote.php" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="form-label">Business Type *</label>
+                      <input type="text" class="form-control" name="business-description" placeholder="e.g., Builder, Cafe, Consultant" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Full Name *</label>
+                      <input type="text" class="form-control" name="full-name" placeholder="Your full name" required>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="form-label">Email Address *</label>
+                      <input type="email" class="form-control" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Phone Number *</label>
+                      <input type="tel" class="form-control" name="contact" placeholder="04XX XXX XXX" required>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label class="form-label">Annual Revenue</label>
+                      <input type="text" class="form-control" name="estimated-annual-turnover" placeholder="e.g., $500,000">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label class="form-label">Message</label>
+                      <textarea class="form-control" name="message" rows="3" placeholder="Tell us about your insurance needs..."></textarea>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="ilnk-pl-quote-submit">Submit</button>
+
+                  <div class="ilnk-pl-quote-trust">
+                    <span class="ilnk-pl-quote-trust-item"><i class="fa-solid fa-shield-halved"></i> No obligation</span>
+                    <span class="ilnk-pl-quote-trust-item"><i class="fa-regular fa-clock"></i> Fast response</span>
+                    <span class="ilnk-pl-quote-trust-item"><i class="fa-solid fa-award"></i> Trusted insurers</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE ILINK INSURANCE -->
+      <section class="ilnk-pl-why">
+        <div class="container">
+          <div class="ilnk-pl-why-header">
+            <h2>Why Choose ILinkInsurance</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+          <div class="row">
+            
+            <div class="col-md-6 mb-4">
+              <div class="ilnk-pl-feature">
+                <div class="ilnk-pl-feature-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="ilnk-pl-feature-content">
+                  <h3>Tailored Coverage</h3>
+                  <p>Resulting from injury, illness or a combination of both</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="ilnk-pl-feature">
+                <div class="ilnk-pl-feature-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="ilnk-pl-feature-content">
+                  <h3>Tailored Coverage</h3>
+                  <p>Resulting from injury, illness or a combination of both</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="ilnk-pl-feature">
+                <div class="ilnk-pl-feature-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="ilnk-pl-feature-content">
+                  <h3>Tailored Coverage</h3>
+                  <p>Resulting from injury, illness or a combination of both</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="ilnk-pl-feature">
+                <div class="ilnk-pl-feature-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="ilnk-pl-feature-content">
+                  <h3>Tailored Coverage</h3>
+                  <p>Resulting from injury, illness or a combination of both</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- INDUSTRIES WE COVER -->
+      <section class="ilnk-pl-industries">
+        <div class="container">
+          <h2>Industries We Cover</h2>
+          <p class="ilnk-pl-section-desc">Coverage available for many industries across Australia. From small businesses to large enterprises, we help protect your operations with tailored liability insurance.</p>
+          <div class="ilnk-pl-industry-grid">
+            
+            <div class="ilnk-pl-industry-card">
+              <i class="fa-solid fa-wrench ilnk-pl-industry-icon"></i>
+              <div class="ilnk-pl-industry-name">Contractors</div>
+            </div>
+            <div class="ilnk-pl-industry-card">
+              <i class="lni lni-shopping-basket ilnk-pl-industry-icon"></i>
+              <div class="ilnk-pl-industry-name">Retail Stores</div>
+            </div>
+            <div class="ilnk-pl-industry-card">
+              <i class="lni lni-coffee-cup ilnk-pl-industry-icon"></i>
+              <div class="ilnk-pl-industry-name">Retail Stores</div>
+            </div>
+            <div class="ilnk-pl-industry-card">
+              <i class="fa-solid fa-wand-magic-sparkles ilnk-pl-industry-icon"></i>
+              <div class="ilnk-pl-industry-name">Retail Stores</div>
+            </div>
+            <div class="ilnk-pl-industry-card">
+              <i class="lni lni-briefcase ilnk-pl-industry-icon"></i>
+              <div class="ilnk-pl-industry-name">Retail Stores</div>
+            </div>
+            <div class="ilnk-pl-industry-card">
+              <i class="lni lni-cut ilnk-pl-industry-icon"></i>
+              <div class="ilnk-pl-industry-name">Retail Stores</div>
+            </div>
+            <div class="ilnk-pl-industry-card">
+              <i class="fa-solid fa-helmet-safety ilnk-pl-industry-icon"></i>
+              <div class="ilnk-pl-industry-name">Retail Stores</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="ilnk-pl-process">
+        <div class="container">
+          <h2>How It Works</h2>
+          <p class="ilnk-pl-section-desc" style="margin-bottom: 50px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="ilnk-pl-process-steps">
+            
+            <div class="ilnk-pl-step">
+              <div class="ilnk-pl-step-icon-wrapper">
+                <i class="lni lni-search ilnk-pl-step-icon"></i>
+                <span class="ilnk-pl-step-badge">1</span>
+              </div>
+              <h3>Tell us about your business</h3>
+              <p>Share your business details and<br>insurance needs</p>
+            </div>
+            <div class="ilnk-pl-step">
+              <div class="ilnk-pl-step-icon-wrapper">
+                <i class="lni lni-search ilnk-pl-step-icon"></i>
+                <span class="ilnk-pl-step-badge">2</span>
+              </div>
+              <h3>Compare insurance options</h3>
+              <p>We compare policies from leading<br>insurers</p>
+            </div>
+            <div class="ilnk-pl-step">
+              <div class="ilnk-pl-step-icon-wrapper">
+                <i class="lni lni-checkmark-circle ilnk-pl-step-icon"></i>
+                <span class="ilnk-pl-step-badge">3</span>
+              </div>
+              <h3>Choose your coverage</h3>
+              <p>Select the policy that best suits<br>your needs</p>
+            </div>
+            <div class="ilnk-pl-step">
+              <div class="ilnk-pl-step-icon-wrapper">
+                <i class="fa-solid fa-clipboard-check ilnk-pl-step-icon"></i>
+                <span class="ilnk-pl-step-badge">4</span>
+              </div>
+              <h3>Get insured quickly</h3>
+              <p>Fast processing and instant policy<br>documents</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- RELATED INSURANCE SERVICES -->
+      <section class="ilnk-pl-related">
+        <div class="container">
+          <h2>Related Insurance Services</h2>
+          <p class="ilnk-pl-section-desc" style="text-align: center; margin-bottom: 50px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="row">
+            
+            <div class="col-md-4 mb-4">
+              <div class="ilnk-pl-related-card">
+                <div class="ilnk-pl-related-icon">
+                  <i class="lni lni-empty-file"></i>
+                </div>
+                <div class="ilnk-pl-related-content">
+                  <h3>Professional Indemnity Insurance</h3>
+                  <p>Protection against claims of professional negligence, errors, or omissions in your services.</p>
+                  <div>
+                    <a href="#" class="ilnk-pl-related-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="ilnk-pl-related-card">
+                <div class="ilnk-pl-related-icon">
+                  <i class="lni lni-users"></i>
+                </div>
+                <div class="ilnk-pl-related-content">
+                  <h3>Management Liability Insurance</h3>
+                  <p>Coverage for directors and officers against wrongful acts in managing your business.</p>
+                  <div>
+                    <a href="#" class="ilnk-pl-related-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="ilnk-pl-related-card">
+                <div class="ilnk-pl-related-icon">
+                  <i class="lni lni-shield"></i>
+                </div>
+                <div class="ilnk-pl-related-content">
+                  <h3>Cyber Liability Insurance</h3>
+                  <p>Protection against data breaches, cyber attacks, and digital security incidents.</p>
+                  <div>
+                    <a href="#" class="ilnk-pl-related-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="ilnk-pl-cta">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2>Protect Your Business Today</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <a href="#ilink-pl-quote-form" class="ilnk-pl-btn-primary" style="font-size: 1.1rem; padding: 12px 35px; font-weight: 700; border-radius: 6px;">Get Your Quote Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="ilnk-pl-testimonials">
+        <div class="container">
+          <h2>What Our Clients Say</h2>
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+              
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"iLink Insurance made it so easy to find the right coverage for our business. The team was professional, responsive, and got us competitive quotes from top insurers. Highly recommended!"</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">Sarah Mitchell</div>
+                        <div class="ilnk-pl-testi-company">Mitchell Construction</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"We switched to iLink Insurance and saved significantly on our premiums. The claims support has been outstanding, and I appreciate having a dedicated advisor who understands our industry."</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">David Chen</div>
+                        <div class="ilnk-pl-testi-company">Chen Consulting Group</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"As a small business owner, I needed affordable liability insurance without compromising on coverage. iLink delivered exactly that, with exceptional customer service throughout the process."</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">Emma Rodriguez</div>
+                        <div class="ilnk-pl-testi-company">Bella Beauty Salon</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"iLink Insurance made it so easy to find the right coverage for our business. The team was professional, responsive, and got us competitive quotes from top insurers. Highly recommended!"</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">Sarah Mitchell</div>
+                        <div class="ilnk-pl-testi-company">Mitchell Construction</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"We switched to iLink Insurance and saved significantly on our premiums. The claims support has been outstanding, and I appreciate having a dedicated advisor who understands our industry."</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">David Chen</div>
+                        <div class="ilnk-pl-testi-company">Chen Consulting Group</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"As a small business owner, I needed affordable liability insurance without compromising on coverage. iLink delivered exactly that, with exceptional customer service throughout the process."</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">Emma Rodriguez</div>
+                        <div class="ilnk-pl-testi-company">Bella Beauty Salon</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"iLink Insurance made it so easy to find the right coverage for our business. The team was professional, responsive, and got us competitive quotes from top insurers. Highly recommended!"</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">Sarah Mitchell</div>
+                        <div class="ilnk-pl-testi-company">Mitchell Construction</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"We switched to iLink Insurance and saved significantly on our premiums. The claims support has been outstanding, and I appreciate having a dedicated advisor who understands our industry."</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">David Chen</div>
+                        <div class="ilnk-pl-testi-company">Chen Consulting Group</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-4">
+                    <div class="ilnk-pl-testi-card">
+                      <div class="ilnk-pl-testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="ilnk-pl-testi-quote">"As a small business owner, I needed affordable liability insurance without compromising on coverage. iLink delivered exactly that, with exceptional customer service throughout the process."</p>
+                      <div class="ilnk-pl-testi-divider"></div>
+                      <div class="ilnk-pl-testi-author">
+                        <div class="ilnk-pl-testi-name">Emma Rodriguez</div>
+                        <div class="ilnk-pl-testi-company">Bella Beauty Salon</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="ilnk-pl-carousel-dots carousel-indicators position-relative m-0 mt-4 align-items-center">
+              <button type="button" class="ilnk-pl-carousel-dot active" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" class="ilnk-pl-carousel-dot" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" class="ilnk-pl-carousel-dot" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="ilnk-pl-faq">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2>Frequently Asked Questions</h2>
+              
+              <div class="accordion ilnk-pl-accordion mt-5" id="plFaqAccordion">
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      What does public liability insurance cover?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#plFaqAccordion">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Who needs public liability insurance?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#plFaqAccordion">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How much coverage do I need?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#plFaqAccordion">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      How quickly can I get insured?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#plFaqAccordion">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- End ilnk-pl-wrapper -->
+
+    <div id="footer"></div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/form.js"></script>
+  </body>
+</html>
