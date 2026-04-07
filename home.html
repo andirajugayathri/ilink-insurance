@@ -721,6 +721,60 @@
                 font-size: 32px;
             }
 
+            .section-header h2 {
+                font-size: 32px;
+            }
+
+            .hero-content-wrapper {
+                padding-top: 50px;
+            }
+
+            .hero-section .col-lg-6 {
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 38px;
+                margin-bottom: 25px;
+            }
+
+            .experience-badge {
+                right: 0;
+                bottom: -30px;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .exp-circle {
+                width: 50px;
+                height: 50px;
+            }
+
+            .exp-number {
+                font-size: 20px;
+            }
+
+            .exp-title {
+                font-size: 16px;
+            }
+
+            .exp-subtitle {
+                font-size: 13px;
+            }
+
+            .hero-content-wrapper {
+                padding-top: 50px;
+            }
+
+            .hero-section .col-lg-6 {
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 38px;
+                margin-bottom: 25px;
+            }
+
             .ilnk-pl-industry-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -733,7 +787,23 @@
 
         @media (max-width: 768px) {
             .ilnk-pl-about {
-                padding: 60px 0;
+                padding: 60px 0 100px 0;
+            }
+
+            .about-title {
+                font-size: 28px;
+            }
+
+            .section-header h2 {
+                font-size: 28px;
+            }
+
+            .testimonial-card {
+                padding: 25px;
+            }
+
+            .testimonial-text {
+                font-size: 14px;
             }
 
             .ilnk-pl-industry-grid {
@@ -1082,6 +1152,10 @@
             .how-it-works-grid::before {
                 display: none;
             }
+
+            .testimonial-card {
+                width: 100%;
+            }
         }
 
         /* --- FAQ SECTION --- */
@@ -1272,7 +1346,8 @@
                             </div>
                         </div>
                         <div class="more-services-wrap">
-                            <a href="claims.html"><i class="bi bi-arrow-right"></i> More insurance services</a>
+                            <a href="claims.html"><i class="fa-solid fa-arrow-right-long"></i> More insurance
+                                services</a>
                         </div>
                         <div class="call-bar">
                             <a href="tel:1300170328"><i class="bi bi-telephone"></i> Call 1300 170 328</a>
@@ -1429,12 +1504,12 @@
                         <p class="about-desc">For over a decade, Insuria has been the trusted partner for industry
                             leaders and high-net-worth individuals. We don't just sell policies; we engineer resilient
                             risk-management strategies.</p>
-                        <ul class="list-unstyled mt-4">
-                            <li><i class="bi bi-check-circle-fill me-2" style="color: var(--ilnk-pl-secondary);"></i>
+                        <ul class="list-unstyled my-4">
+                            <li><i class="fa-solid fa-check-circle me-2" style="color: var(--ilnk-pl-secondary);"></i>
                                 Tailored risk assessment and consulting</li>
-                            <li><i class="bi bi-check-circle-fill me-2" style="color: var(--ilnk-pl-secondary);"></i>
+                            <li><i class="fa-solid fa-check-circle me-2" style="color: var(--ilnk-pl-secondary);"></i>
                                 Dedicated claims advocacy team</li>
-                            <li><i class="bi bi-check-circle-fill me-2" style="color: var(--ilnk-pl-secondary);"></i>
+                            <li><i class="fa-solid fa-check-circle me-2" style="color: var(--ilnk-pl-secondary);"></i>
                                 Global network of top-tier underwriters</li>
                         </ul>
                         <a href="about.html" class="learn-more-btn">Learn More About Us</a>
@@ -1634,70 +1709,217 @@
                 <h2>What Our Clients Say</h2>
             </div>
 
-            <div class="testimonial-carousel">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1: Focus on Sarah Mitchell -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            <!-- Card 1 (Sarah) -->
+                            <div class="col-lg-4 col-12">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"iLink Insurance made it so easy to find the right
+                                        coverage for
+                                        our business. The team was professional, responsive, and got us competitive
+                                        quotes from
+                                        top insurers. Highly recommended!"</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">Sarah Mitchell</div>
+                                        <div class="author-company">Mitchell Construction</div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="testimonial-text">"iLink Insurance made it so easy to find the right coverage for
-                                our business. The team was professional, responsive, and got us competitive quotes from
-                                top insurers. Highly recommended!"</p>
-                            <div class="testimonial-author">
-                                <div class="author-name">Sarah Mitchell</div>
-                                <div class="author-company">Mitchell Construction</div>
+                            <!-- Card 2 (David) - Hidden on Mobile -->
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"We switched to iLink Insurance and saved significantly
+                                        on our
+                                        premiums. The claims support has been outstanding, and I appreciate having a
+                                        dedicated
+                                        advisor who understands our industry."</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">David Chen</div>
+                                        <div class="author-company">Chen Consulting Group</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 (Emma) - Hidden on Mobile -->
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"As a small business owner, I needed affordable
+                                        liability
+                                        insurance without compromising on coverage. iLink delivered exactly that, with
+                                        exceptional customer service throughout the process."</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">Emma Rodriguez</div>
+                                        <div class="author-company">Bella Beauty Salon</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                    <!-- Slide 2: Focus on David Chen -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <!-- Card 2 (David) -->
+                            <div class="col-lg-4 col-12">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"We switched to iLink Insurance and saved significantly
+                                        on our
+                                        premiums. The claims support has been outstanding, and I appreciate having a
+                                        dedicated
+                                        advisor who understands our industry."</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">David Chen</div>
+                                        <div class="author-company">Chen Consulting Group</div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="testimonial-text">"We switched to iLink Insurance and saved significantly on our
-                                premiums. The claims support has been outstanding, and I appreciate having a dedicated
-                                advisor who understands our industry."</p>
-                            <div class="testimonial-author">
-                                <div class="author-name">David Chen</div>
-                                <div class="author-company">Chen Consulting Group</div>
+                            <!-- Card 3 (Emma) - Hidden on Mobile -->
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"As a small business owner, I needed affordable
+                                        liability
+                                        insurance without compromising on coverage. iLink delivered exactly that, with
+                                        exceptional customer service throughout the process."</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">Emma Rodriguez</div>
+                                        <div class="author-company">Bella Beauty Salon</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 1 (Sarah) - Hidden on Mobile -->
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"iLink Insurance made it so easy to find the right
+                                        coverage for
+                                        our business. The team was professional, responsive, and got us competitive
+                                        quotes from
+                                        top insurers. Highly recommended!"</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">Sarah Mitchell</div>
+                                        <div class="author-company">Mitchell Construction</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-md-none d-lg-block">
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                    <!-- Slide 3: Focus on Emma Rodriguez -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <!-- Card 3 (Emma) -->
+                            <div class="col-lg-4 col-12">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"As a small business owner, I needed affordable
+                                        liability
+                                        insurance without compromising on coverage. iLink delivered exactly that, with
+                                        exceptional customer service throughout the process."</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">Emma Rodriguez</div>
+                                        <div class="author-company">Bella Beauty Salon</div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="testimonial-text">"As a small business owner, I needed affordable liability
-                                insurance without compromising on coverage. iLink delivered exactly that, with
-                                exceptional customer service throughout the process."</p>
-                            <div class="testimonial-author">
-                                <div class="author-name">Emma Rodriguez</div>
-                                <div class="author-company">Bella Beauty Salon</div>
+                            <!-- Card 1 (Sarah) - Hidden on Mobile -->
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"iLink Insurance made it so easy to find the right
+                                        coverage for
+                                        our business. The team was professional, responsive, and got us competitive
+                                        quotes from
+                                        top insurers. Highly recommended!"</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">Sarah Mitchell</div>
+                                        <div class="author-company">Mitchell Construction</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 (David) - Hidden on Mobile -->
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"We switched to iLink Insurance and saved significantly
+                                        on our
+                                        premiums. The claims support has been outstanding, and I appreciate having a
+                                        dedicated
+                                        advisor who understands our industry."</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-name">David Chen</div>
+                                        <div class="author-company">Chen Consulting Group</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-dots">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+                    <div class="dot active" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"></div>
+                    <div class="dot" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></div>
+                    <div class="dot" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></div>
                 </div>
             </div>
         </div>
