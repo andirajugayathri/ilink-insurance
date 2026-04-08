@@ -970,7 +970,7 @@
 
         @media (max-width: 991px) {
             .cta-info-box {
-                margin-top: -80px;
+                /* margin-top: -80px; */
                 padding: 30px;
             }
 
@@ -1298,8 +1298,26 @@
 
                 <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" data-bs-toggle="collapse"
                     data-bs-target="#mobileMenu">
-                    <i class="bi bi-list fs-2 text-dark"></i>
+                    <i class="fa-solid fa-bars fs-2 text-dark"></i>
                 </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="collapse d-lg-none" id="mobileMenu">
+                <div class="pt-3 pb-4 border-top mt-3">
+                    <nav class="d-flex flex-column gap-3">
+                        <a href="index.html" class="ilnk-pl-nav-link mx-0">HOME</a>
+                        <a href="about.html" class="ilnk-pl-nav-link mx-0">ABOUT US</a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">PRODUCTS <i class="bi bi-chevron-down"></i></a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">DOCUMENTS <i class="bi bi-chevron-down"></i></a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">BLOG <i class="bi bi-chevron-down"></i></a>
+                        <a href="contact.html" class="ilnk-pl-nav-link mx-0">CONTACT US</a>
+                        <div class="mt-2">
+                            <a href="#ilink-pl-quote-form"
+                                class="ilnk-pl-header-btn d-inline-block w-100 text-center">Get A Quote</a>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
