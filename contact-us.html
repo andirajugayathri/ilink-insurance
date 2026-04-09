@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | iLink Insurance</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- LineIcons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="includes.js"></script>
+
+    <style>
+        /* --- GLOBAL CONSTANTS --- */
+        :root {
+            --ilnk-pl-primary: #00143F;
+            --ilnk-pl-secondary: #F26121;
+            --ilnk-pl-text: #333333;
+            --ilnk-pl-bg: #FFFFFF;
+            --ilnk-pl-gray-bg: #F9FAFB;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+            color: var(--ilnk-pl-text);
+        }
+
+        h2,
+        h3,
+        .exp-title {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* --- HEADER STYLES FROM PUBLIC-&-PRODUCTS-LIABILITY-INSURANCE --- */
+        .ilnk-pl-topbar {
+            background-color: var(--ilnk-pl-primary);
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .ilnk-pl-topbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        .ilnk-pl-topbar-right {
+            text-align: right;
+        }
+
+        .ilnk-pl-topbar-right a {
+            margin-left: 15px;
+            margin-right: 0;
+            font-size: 1.1rem;
+        }
+
+        .ilnk-pl-header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        .ilnk-pl-header .navbar-brand img {
+            height: 55px;
+        }
+
+        .ilnk-pl-nav-link {
+            color: #5A5A5A;
+            font-weight: 600;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .ilnk-pl-nav-link:hover {
+            color: var(--ilnk-pl-secondary);
+        }
+
+        .ilnk-pl-nav-link i {
+            font-size: 0.75rem;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .ilnk-pl-header-btn {
+            background-color: var(--ilnk-pl-secondary);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .ilnk-pl-header-btn:hover {
+            background-color: #FF581D;
+            color: #fff;
+        }
+
+        /* --- HERO SECTION STYLES --- */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: #f8f8f8;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0) 100%);
+            z-index: 2;
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 1250px;
+        }
+
+        .brand-name {
+            color: var(--ilnk-pl-secondary);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .hero-title {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.05;
+            margin-bottom: 45px;
+            color: #000000;
+            letter-spacing: -1px;
+        }
+
+        .claim-btn {
+            display: inline-block;
+            background-color: #f26121;
+            color: #fff;
+            border: none;
+            border-radius: 40px;
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .claim-btn:hover {
+            background-color: #e55416;
+            color: #fff;
+        }
+
+        .features-box {
+            background-color: rgba(255, 255, 255, 0.4);
+            /* Very light and transparent */
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 0px;
+            /* More rectangular as per screenshot */
+            padding: 50px 0 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            margin-left: auto;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+        }
+
+        .features-heading {
+            text-align: center;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        .features-grid {
+            padding: 0 25px;
+        }
+
+        .feature-item {
+            text-align: center;
+            /* padding: 20px 15px; */
+            background-color: #fff;
+            border-radius: 8px;
+            height: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+
+        .feature-icon img {
+            height: 48px;
+        }
+
+        .feature-title {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            line-height: 1.2;
+        }
+
+        .more-services-wrap {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .more-services-wrap a,
+        .more-services-wrap i {
+            color: #E64A19;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .more-services a {
+            color: #f26121;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .more-services a i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .call-bar {
+            background-color: #1c2126;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 0 !important;
+            text-align: center;
+        }
+
+        .call-bar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .call-bar i {
+            color: #E64A19;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 1199px) {
+            .hero-title {
+                font-size: 52px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .hero-section::before {
+                width: 100%;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .features-box {
+                margin: 50px auto 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 38px;
+            }
+
+            .feature-icon {
+                margin-bottom: 0 !important;
+            }
+
+            .feature-item {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* --- FOOTER CTA (ORANGE) --- */
+        .ilnk-pl-footer-cta {
+            padding: 60px 0;
+            background-color: #f26121;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-cta-title {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta-desc {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            opacity: 0.9;
+        }
+
+        .footer-cta-btn {
+            display: inline-block;
+            padding: 18px 45px;
+            background-color: #fff;
+            color: #f26121;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            color: #f26121;
+            background-color: #f8f8f8;
+        }
+
+        /* --- CONTACT PAGE CONTENT --- */
+        .contact-info-section {
+            padding: 80px 0 40px;
+            background-color: #fff;
+        }
+
+        .ci-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .ci-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .ci-icon-wrapper {
+            width: 64px;
+            height: 64px;
+            background-color: rgba(255, 127, 5, 0.06);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            /* box-shadow: 0 8px 20px rgba(242, 97, 33, 0.2); */
+        }
+
+        .ci-icon-wrapper i {
+            color: #FF7F05;
+            font-size: 24px;
+        }
+
+        .ci-title {
+            color: var(--ilnk-pl-primary);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .ci-text {
+            color: var(--ilnk-pl-secondary);
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .ci-text:hover {
+            opacity: 0.8;
+            color: var(--ilnk-pl-secondary);
+        }
+
+        /* Form + Map Section */
+        .contact-form-section {
+            padding: 40px 0 80px;
+            background-color: #fff;
+        }
+
+        .cfs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cfs-form-card {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .cfs-input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .cfs-input {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            border: 1px solid #EAEAEA;
+            border-radius: 30px;
+            font-size: 15px;
+            background-color: #fff;
+        }
+
+        .cfs-inputs {
+            width: 100%;
+            padding: 15px 20px 15px 20px;
+            border: 1px solid #EAEAEA;
+            border-radius: 30px;
+            font-size: 15px;
+            background-color: #fff;
+        }
+
+        .cfs-input-group i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #FF7F05;
+            font-size: 18px;
+        }
+
+        .cfs-textarea {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #EAEAEA;
+            border-radius: 20px;
+            font-size: 15px;
+            background-color: #fff;
+            min-height: 180px;
+            margin-bottom: 20px;
+            resize: none;
+        }
+
+        .cfs-checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #5A5A5A;
+        }
+
+        .cfs-submit-btn {
+            background-color: var(--ilnk-pl-secondary);
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cfs-submit-btn:hover {
+            background-color: #e55416;
+            transform: translateY(-2px);
+        }
+
+        .cfs-map-wrapper {
+            height: 100%;
+            min-height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        @media (max-width: 991px) {
+            .ci-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cfs-map-wrapper {
+                margin-top: 50px;
+                min-height: 400px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .ci-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Global Header Elements -->
+    <div class="ilnk-pl-topbar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="mailto:info@ilinkinsurance.com.au"><i
+                            class="fa-regular fa-envelope me-2"></i>info@ilinkinsurance.com.au</a>
+                    <span class="text-#fff-50 mx-2">|</span>
+                    <a href="tel:1300170328"><i class="fa-solid fa-phone me-2"></i>1300 170 328</a>
+                </div>
+                <div class="col-md-6 ilnk-pl-topbar-right">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="ilnk-pl-header sticky-top">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.webp" alt="iLink Insurance"
+                        onerror="this.src='https://via.placeholder.com/150x50?text=iLink+Insurance'">
+                </a>
+
+                <nav class="d-none d-lg-flex align-items-center">
+                    <a href="index.html" class="ilnk-pl-nav-link">HOME</a>
+                    <a href="about-us.html" class="ilnk-pl-nav-link">ABOUT US</a>
+                    <a href="#" class="ilnk-pl-nav-link">PRODUCTS <i class="bi bi-chevron-down"></i></a>
+                    <a href="#" class="ilnk-pl-nav-link">DOCUMENTS <i class="bi bi-chevron-down"></i></a>
+                    <a href="#" class="ilnk-pl-nav-link">BLOG <i class="bi bi-chevron-down"></i></a>
+                    <a href="contact-us.html" class="ilnk-pl-nav-link active"
+                        style="color: var(--ilnk-pl-secondary);">CONTACT US</a>
+                </nav>
+
+                <div class="d-none d-lg-block">
+                    <a href="#ilink-pl-quote-form" class="ilnk-pl-header-btn">Get A Quote</a>
+                </div>
+
+                <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mobileMenu">
+                    <i class="fa-solid fa-bars fs-2 text-dark"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="collapse d-lg-none" id="mobileMenu">
+                <div class="pt-3 pb-4 border-top mt-3">
+                    <nav class="d-flex flex-column gap-3">
+                        <a href="index.html" class="ilnk-pl-nav-link mx-0">HOME</a>
+                        <a href="about-us.html" class="ilnk-pl-nav-link mx-0">ABOUT US</a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">PRODUCTS <i class="bi bi-chevron-down"></i></a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">DOCUMENTS <i class="bi bi-chevron-down"></i></a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">BLOG <i class="bi bi-chevron-down"></i></a>
+                        <a href="contact-us.html" class="ilnk-pl-nav-link mx-0 active"
+                            style="color: var(--ilnk-pl-secondary);">CONTACT US</a>
+                        <div class="mt-2">
+                            <a href="#ilink-pl-quote-form"
+                                class="ilnk-pl-header-btn d-inline-block w-100 text-center">Get A Quote</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="images/hero-banner.png" class="hero-image" alt="Office workers discussing insurance">
+        <div class="container hero-content-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="brand-name">iLink Insurance</div>
+                    <h1 class="hero-title">Contact Us For<br>Expert Assistance.</h1>
+                    <a href="mailto:info@ilinkinsurance.com.au" class="claim-btn">Get In Touch</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="features-box">
+                        <h3 class="features-heading">Plan it Right</h3>
+                        <div class="features-grid">
+                            <div class="row g-2">
+                                <div class="col-md-4">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <img src="images/Money Icon.png" alt="Instant Cover Icon">
+                                        </div>
+                                        <div class="feature-title">Instant Cover</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <img src="images/Claim Icon.png" alt="Easier Claims Icon">
+                                        </div>
+                                        <div class="feature-title">Easier Claims</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <img src="images/Contract Icon.png" alt="Competitive Coverage Icon">
+                                        </div>
+                                        <div class="feature-title">Competitive Coverage</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-services-wrap">
+                            <a href="claims.html"><i class="fa-solid fa-arrow-right-long"></i> More insurance
+                                services</a>
+                        </div>
+                        <div class="call-bar">
+                            <a href="tel:1300170328"><i class="bi bi-telephone-fill"></i> Call 1300 170 328</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO GRID -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="ci-grid">
+                <!-- Email -->
+                <div class="ci-item">
+                    <div class="ci-icon-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3 class="ci-title">Email us</h3>
+                    <a href="mailto:ilinkinsurance@gmail.com" class="ci-text">ilinkinsurance@gmail.com</a>
+                </div>
+                <!-- Call -->
+                <div class="ci-item">
+                    <div class="ci-icon-wrapper">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="ci-title">Call us</h3>
+                    <a href="tel:1300170328" class="ci-text">1300 170 328</a>
+                </div>
+                <!-- Timings -->
+                <div class="ci-item">
+                    <div class="ci-icon-wrapper">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="ci-title">Timings</h3>
+                    <span class="ci-text">Monday to Saturday<br>10am to 6am</span>
+                </div>
+                <!-- Address -->
+                <div class="ci-item">
+                    <div class="ci-icon-wrapper">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="ci-title">Address</h3>
+                    <span class="ci-text">Suite 16, Level 2, 1 Ricketts Road,<br>Mount Waverley, VIC 3149</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM + MAP SECTION -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row gx-lg-5">
+                <div class="col-lg-6">
+                    <div class="cfs-form-card">
+                        <form action="#">
+                            <div class="row g-3">
+                                <div class="col-md-6 cfs-input-group">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" class="cfs-input" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 cfs-input-group">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" class="cfs-input" placeholder="Your Mail" required>
+                                </div>
+                                <div class="col-md-6 cfs-input-group">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="tel" class="cfs-input" placeholder="Phone No." required>
+                                </div>
+                                <div class="col-md-6 cfs-input-group">
+                                    <input type="text" class="cfs-inputs" placeholder="What Are You Need?" required>
+                                </div>
+                            </div>
+                            <textarea class="cfs-textarea" placeholder="Write your message" required></textarea>
+                            <div class="cfs-checkbox-group">
+                                <input type="checkbox" id="terms" required>
+                                <label for="terms">I agree to all terms and conditions.</label>
+                            </div>
+                            <button type="submit" class="cfs-submit-btn">Submit Now <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cfs-map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.5531880350236!2d145.1282028756988!3d-37.89413067195561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66aae9495a1f3%3A0x37fa92eee61c5c50!2sSuite%2016%2C%20Level%202%2F1%20Ricketts%20Rd%2C%20Mount%20Waverley%20VIC%203149%2C%20Australia!5e0!3m2!1sen!2sin!4v1732703331937!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+
+    <script>
+        function toggleFaq(header) {
+            const item = header.parentElement;
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon');
+            const isOpen = answer.style.display === 'block';
+
+            // Close all answers (optional, but clean)
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+            if (!isOpen) {
+                answer.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/form.js"></script>
+</body>
+
+</html>
