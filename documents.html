@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documents | iLink Insurance</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- LineIcons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="includes.js"></script>
+
+    <style>
+        /* --- GLOBAL CONSTANTS --- */
+        :root {
+            --ilnk-pl-primary: #00143F;
+            --ilnk-pl-secondary: #FF7F05;
+            --ilnk-pl-text: #333333;
+            --ilnk-pl-bg: #FFFFFF;
+            --ilnk-pl-gray-bg: #F9FAFB;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+            color: var(--ilnk-pl-text);
+        }
+
+        h2,
+        h3,
+        .exp-title {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .section-header h2 {
+            font-size: 40px;
+            font-weight: 800;
+            color: #1c2126;
+            margin-bottom: 20px;
+        }
+
+        /* --- HEADER STYLES --- */
+        .ilnk-pl-topbar {
+            background-color: var(--ilnk-pl-primary);
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .ilnk-pl-topbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        .ilnk-pl-topbar-right {
+            text-align: right;
+        }
+
+        .ilnk-pl-topbar-right a {
+            margin-left: 15px;
+            margin-right: 0;
+            font-size: 1.1rem;
+        }
+
+        .ilnk-pl-header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        .ilnk-pl-header .navbar-brand img {
+            height: 55px;
+        }
+
+        .ilnk-pl-nav-link {
+            color: #5A5A5A;
+            font-weight: 600;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .ilnk-pl-nav-link:hover {
+            color: var(--ilnk-pl-secondary);
+        }
+
+        .ilnk-pl-nav-link i {
+            font-size: 0.75rem;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .ilnk-pl-header-btn {
+            background-color: var(--ilnk-pl-secondary);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .ilnk-pl-header-btn:hover {
+            background-color: #FF581D;
+            color: #fff;
+        }
+
+        /* --- HERO SECTION STYLES --- */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: #f8f8f8;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0) 100%);
+            z-index: 2;
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 1250px;
+        }
+
+        .brand-name {
+            color: var(--ilnk-pl-secondary);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .hero-title {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.05;
+            margin-bottom: 45px;
+            color: #000000;
+            letter-spacing: -1px;
+        }
+
+        .claim-btn {
+            display: inline-block;
+            background-color: #FF7F05;
+            color: #fff;
+            border: none;
+            border-radius: 40px;
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .claim-btn:hover {
+            background-color: #e55416;
+            color: #fff;
+        }
+
+        .features-box {
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 0px;
+            padding: 50px 0 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            margin-left: auto;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+        }
+
+        .features-heading {
+            text-align: center;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        .features-grid {
+            padding: 0 25px;
+        }
+
+        .feature-item {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            height: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+
+        .feature-icon img {
+            height: 48px;
+        }
+
+        .feature-title {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            line-height: 1.2;
+        }
+
+        .more-services-wrap {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .more-services-wrap a,
+        .more-services-wrap i {
+            color: #E64A19;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .call-bar {
+            background-color: #1c2126;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 0 !important;
+            text-align: center;
+        }
+
+        .call-bar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .call-bar i {
+            color: #E64A19;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        /* --- DOCUMENTS PAGE SPECIFIC STYLES --- */
+        .docs-intro-section {
+            padding: 60px 0 0;
+            text-align: center;
+        }
+
+        .docs-intro-section h2 {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 20px;
+        }
+
+        .docs-intro-section p {
+            margin: 0 auto;
+            color: #5A5A5A;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .available-docs-section {
+            padding: 40px 0 80px;
+            background-color: #fff;
+        }
+
+        .available-docs-section h3 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 10px;
+        }
+
+        .available-docs-section .section-subtitle {
+            text-align: center;
+            color: #5A5A5A;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .doc-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 4px 0px #0000002E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #E5E7EB;
+            margin-bottom: 20px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+
+        .doc-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .doc-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #5A5A5A;
+        }
+
+        .doc-badge {
+            background: #FF7F0526;
+            color: #5A5A5A;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-radius: 8px;
+            width: fit-content;
+        }
+
+        .doc-download-btn {
+            background-color: #FF7F05;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+
+        .docs-help-cta {
+            /* padding: 60px 0; */
+            background-color: #fff;
+        }
+
+        .help-cta-box {
+            background: linear-gradient(135deg, rgba(254, 223, 194, 0.3) 0%, #FFFFFF 100%);
+            border-radius: 20px;
+            border: 1px solid #E5E7EB;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .help-cta-box h2 {
+            font-size: 35px;
+            font-weight: 800;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 25px;
+        }
+
+        .help-cta-box p {
+            color: #5A5A5A;
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .help-cta-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .help-btn-primary {
+            background-color: #FF7F05;
+            color: #fff;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-weight: 400;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .help-btn-secondary {
+            background-color: #fff;
+            color: #FF7F05;
+            padding: 14px 35px;
+            border-radius: 8px;
+            font-weight: 400;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #FF7F05;
+            transition: all 0.3s ease;
+        }
+
+        .help-btn-primary:hover {
+            background-color: #e55416;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .help-btn-secondary:hover {
+            background-color: #FF7F05;
+            color: #fff;
+            border-color: #FF7F05;
+            transform: translateY(-2px);
+        }
+
+        /* --- WHY CHOOSE US SECTION --- */
+        .why-choose-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .why-choose-section h2 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 15px;
+        }
+
+        .why-choose-section .section-desc {
+            text-align: center;
+            color: #5A5A5A;
+            margin: 0 auto 50px;
+            font-size: 16px;
+        }
+
+        .choose-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            border: 1px solid #E5E7EB;
+            transition: all 0.3s ease;
+        }
+
+        .choose-icon-box {
+            width: 50px;
+            height: 50px;
+            background: #FF7F0533;
+            color: #FF7F05;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        .choose-card h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 15px;
+        }
+
+        .choose-card p {
+            color: #5A5A5A;
+            line-height: 1.6;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        /* --- FAQ SECTION --- */
+        .ilnk-pl-faq {
+            padding-bottom: 60px;
+            background-color: #fff;
+        }
+
+        .faq-accordion {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #FF7F050D;
+            border: 1px solid #E5E7EB;
+            transition: all 0.3s ease;
+        }
+
+        .faq-header {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FDF8F3;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: #1c2126;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            font-size: 17px;
+        }
+
+        .faq-icon {
+            color: #A0A0A0;
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.7;
+            display: none;
+        }
+
+        @media (max-width: 991px) {
+            .hero-section::before {
+                width: 100%;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .features-box {
+                margin: 50px auto 0;
+            }
+
+            .hero-content-wrapper {
+                padding-top: 50px;
+            }
+
+            .hero-section .col-lg-6 {
+                text-align: center;
+            }
+
+            .docs-intro-section h2 {
+                font-size: 32px;
+            }
+
+            .available-docs-section h3 {
+                font-size: 28px;
+            }
+
+            .help-cta-box h2 {
+                font-size: 30px;
+            }
+
+            .more-services-wrap {
+                padding-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 38px;
+            }
+
+            .feature-item {
+                margin-bottom: 20px;
+            }
+
+            .help-cta-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .help-btn-primary,
+            .help-btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Global Header Elements -->
+    <div class="ilnk-pl-topbar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="mailto:info@ilinkinsurance.com.au"><i
+                            class="fa-regular fa-envelope me-2"></i>info@ilinkinsurance.com.au</a>
+                    <span class="text-#fff-50 mx-2">|</span>
+                    <a href="tel:1300170328"><i class="fa-solid fa-phone me-2"></i>1300 170 328</a>
+                </div>
+                <div class="col-md-6 ilnk-pl-topbar-right">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="ilnk-pl-header sticky-top">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.webp" alt="iLink Insurance">
+                </a>
+
+                <nav class="d-none d-lg-flex align-items-center">
+                    <a href="index.html" class="ilnk-pl-nav-link">HOME</a>
+                    <a href="about.html" class="ilnk-pl-nav-link">ABOUT US</a>
+                    <a href="#" class="ilnk-pl-nav-link">PRODUCTS <i class="bi bi-chevron-down"></i></a>
+                    <a href="documents.html" class="ilnk-pl-nav-link">DOCUMENTS <i class="bi bi-chevron-down"></i></a>
+                    <a href="#" class="ilnk-pl-nav-link">BLOG <i class="bi bi-chevron-down"></i></a>
+                    <a href="contact.html" class="ilnk-pl-nav-link">CONTACT US</a>
+                </nav>
+
+                <div class="d-none d-lg-block">
+                    <a href="contact.html" class="ilnk-pl-header-btn">Get A Quote</a>
+                </div>
+
+                <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mobileMenu">
+                    <i class="fa-solid fa-bars fs-2 text-dark"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="collapse d-lg-none" id="mobileMenu">
+                <div class="pt-3 pb-4 border-top mt-3">
+                    <nav class="d-flex flex-column gap-3">
+                        <a href="index.html" class="ilnk-pl-nav-link mx-0">HOME</a>
+                        <a href="about.html" class="ilnk-pl-nav-link mx-0">ABOUT US</a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">PRODUCTS <i class="bi bi-chevron-down"></i></a>
+                        <a href="documents.html" class="ilnk-pl-nav-link mx-0">DOCUMENTS <i
+                                class="bi bi-chevron-down"></i></a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">BLOG <i class="bi bi-chevron-down"></i></a>
+                        <a href="contact.html" class="ilnk-pl-nav-link mx-0">CONTACT US</a>
+                        <div class="mt-2">
+                            <a href="contact.html" class="ilnk-pl-header-btn d-inline-block w-100 text-center">Get A
+                                Quote</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="images/hero-banner.png" class="hero-image" alt="Office workers discussing insurance">
+        <div class="container hero-content-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="brand-name">iLink Insurance</div>
+                    <h1 class="hero-title">Simplifying Insurance<br>For You At Every Step.</h1>
+                    <a href="claims.html" class="claim-btn">Claim Process</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="features-box">
+                        <h3 class="features-heading">Plan it Right</h3>
+                        <div class="features-grid">
+                            <div class="row g-2">
+                                <div class="col-md-4">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <img src="images/Money Icon.png" alt="Instant Cover Icon">
+                                        </div>
+                                        <div class="feature-title">Instant Cover</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <img src="images/Claim Icon.png" alt="Easier Claims Icon">
+                                        </div>
+                                        <div class="feature-title">Easier Claims</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <img src="images/Contract Icon.png" alt="Competitive Coverage Icon">
+                                        </div>
+                                        <div class="feature-title">Competitive Coverage</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-services-wrap">
+                            <a href="claims.html"><i class="fa-solid fa-arrow-right-long"></i> More insurance
+                                services</a>
+                        </div>
+                        <div class="call-bar">
+                            <a href="tel:1300170328"><i class="bi bi-telephone-fill"></i> Call 1300 170 328</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple, Transparent Documentation Section -->
+    <section class="docs-intro-section">
+        <div class="container">
+            <h2>Simple, Transparent Documentation</h2>
+            <p>We streamline the documentation process to make insurance simple and efficient. All required forms are
+                available in one place, ensuring a smooth and hassle-free experience for our clients.</p>
+        </div>
+    </section>
+
+    <!-- Available Documents Grid -->
+    <section class="available-docs-section">
+        <div class="container">
+            <h3>Available Documents</h3>
+            <p class="section-subtitle">Download the forms you need for your insurance application or policy update</p>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="doc-card">
+                        <div class="doc-info">
+                            <div class="doc-title">Business Insurance Proposal Form</div>
+                            <span class="doc-badge">PDF</span>
+                        </div>
+                        <a href="/assets/documents/ILINK-Business-Insurance-proposal-form%20(1).docx" class="doc-download-btn" title="Download PDF">
+                            <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="doc-card">
+                        <div class="doc-info">
+                            <div class="doc-title">Professional Indemnity Proposal Form</div>
+                            <span class="doc-badge">PDF</span>
+                        </div>
+                        <a href="/assets/documents/ilink-IT-PI-PL-PROP.docx" class="doc-download-btn" title="Download PDF">
+                            <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="doc-card">
+                        <div class="doc-info">
+                            <div class="doc-title">Truck Insurance Proposal Form</div>
+                            <span class="doc-badge">PDF</span>
+                        </div>
+                        <a href="/assets/documents/ILINK-truck-insurance-proposal-form.doc" class="doc-download-btn" title="Download PDF">
+                            <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Need Help CTA Section -->
+    <section class="docs-help-cta">
+        <div class="container">
+            <div class="help-cta-box">
+                <h2>Need Help With Your Documents?</h2>
+                <p>If you're unsure which documents are required or need help completing forms, our insurance
+                    specialists are here to assist you every step of the way.</p>
+                <div class="help-cta-btns">
+                    <a href="contact.html" class="help-btn-primary">
+                        <i class="bi bi-envelope-fill"></i> Contact Us
+                    </a>
+                    <a href="contact.html" class="help-btn-secondary">
+                        <i class="bi bi-upload"></i> Send Documents
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Services Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2>Why Choose Our Services</h2>
+            <p class="section-desc">We're committed to providing exceptional service and support throughout your
+                insurance journey</p>
+
+            <div class="row g-4">
+                <!-- Benefit 1 -->
+                <div class="col-lg-6">
+                    <div class="choose-card">
+                        <div class="choose-icon-box">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </div>
+                        <h4>Simplified Documentation Process</h4>
+                        <p>Our user-friendly forms and clear guidelines make the application process quick and
+                            straightforward.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="col-lg-6">
+                    <div class="choose-card">
+                        <div class="choose-icon-box">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h4>Expert Insurance Advisors</h4>
+                        <p>Access to experienced professionals who understand your business needs and provide
+                            personalized guidance.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="col-lg-6">
+                    <div class="choose-card">
+                        <div class="choose-icon-box">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <h4>Fast Turnaround Times</h4>
+                        <p>We value your time and ensure prompt processing of your applications with regular updates.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="col-lg-6">
+                    <div class="choose-card">
+                        <div class="choose-icon-box">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h4>Secure and Confidential Handling</h4>
+                        <p>Your information is protected with industry-leading security measures and strict
+                            confidentiality protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="ilnk-pl-faq">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <h4 class="faq-question">What does public liability insurance cover?</h4>
+                        <i class="bi bi-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Public liability insurance generally protects you and your business against the financial
+                            risk of being found liable to a third party for death or injury, loss or damage of property
+                            as a result of your business activities.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <h4 class="faq-question">Who needs public liability insurance?</h4>
+                        <i class="bi bi-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Any business that interacts with the public, clients, or suppliers could benefit from public
+                            liability insurance. This includes tradespeople, retailers, consultants, and service-based
+                            businesses.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <h4 class="faq-question">How much coverage do I need?</h4>
+                        <i class="bi bi-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The amount of coverage you need depends on your business type, the risks involved, and
+                            potential contract requirements. Most Australian businesses opt for $5M, $10M, or $20M
+                            limits.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <h4 class="faq-question">How quickly can I get insured?</h4>
+                        <i class="bi bi-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>With Insuria, you can often get a quote and activate your coverage within minutes. Some
+                            specialized risks may require review by our expert brokers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleFaq(header) {
+            const item = header.parentElement;
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon');
+            const isOpen = answer.style.display === 'block';
+
+            // Close all answers (optional, but clean)
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+            if (!isOpen) {
+                answer.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
