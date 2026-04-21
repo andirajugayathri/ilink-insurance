@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claim Process | iLink Insurance</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- LineIcons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="includes.js"></script>
+
+    <style>
+        /* --- GLOBAL CONSTANTS --- */
+        :root {
+            --ilnk-pl-primary: #130F40;
+            --ilnk-pl-secondary: #ff705f;
+            --ilnk-pl-text: #333333;
+            --ilnk-pl-bg: #FFFFFF;
+            --ilnk-pl-gray-bg: #F9FAFB;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+            color: var(--ilnk-pl-text);
+        }
+
+        h2,
+        h3,
+        .exp-title {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* --- HEADER STYLES --- */
+        .ilnk-pl-topbar {
+            background-color: var(--ilnk-pl-primary);
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .ilnk-pl-topbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        .ilnk-pl-topbar-right {
+            text-align: right;
+        }
+
+        .ilnk-pl-topbar-right a {
+            margin-left: 15px;
+            margin-right: 0;
+            font-size: 1.1rem;
+        }
+
+        .ilnk-pl-header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        .ilnk-pl-header .navbar-brand img {
+            height: 55px;
+        }
+
+        .ilnk-pl-nav-link {
+            color: #5A5A5A;
+            font-weight: 600;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .ilnk-pl-nav-link:hover {
+            color: var(--ilnk-pl-secondary);
+        }
+
+        .ilnk-pl-nav-link i {
+            font-size: 0.75rem;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .ilnk-pl-header-btn {
+            background-color: var(--ilnk-pl-secondary);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .ilnk-pl-header-btn:hover {
+            background-color: #FF581D;
+            color: #fff;
+        }
+
+        /* --- HERO SECTION STYLES --- */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: #f8f8f8;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0) 100%);
+            z-index: 2;
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 1250px;
+        }
+
+        .brand-name {
+            color: var(--ilnk-pl-secondary);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .hero-title {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.05;
+            margin-bottom: 45px;
+            color: #000000;
+            letter-spacing: -1px;
+        }
+
+        .claim-btn {
+            display: inline-block;
+            background-color: #f26121;
+            color: #fff;
+            border: none;
+            border-radius: 40px;
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .claim-btn:hover {
+            background-color: #e55416;
+            color: #fff;
+        }
+
+        .features-box {
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 0px;
+            padding: 50px 0 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            margin-left: auto;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+        }
+
+        .features-heading {
+            text-align: center;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        .features-grid {
+            padding: 0 25px;
+        }
+
+        .feature-item {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            height: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .feature-icon img {
+            height: 48px;
+        }
+
+        .feature-title {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            line-height: 1.2;
+        }
+
+        .call-bar {
+            background-color: #1c2126;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 0 !important;
+            text-align: center;
+        }
+
+        .call-bar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .call-bar i {
+            color: #E64A19;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        .more-services-wrap {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .more-services-wrap a,
+        .more-services-wrap i {
+            color: #E64A19;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .claim-advice-content {
+            padding-top: 60px;
+        }
+
+        .claim-advice-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .claim-advice-header h2 {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 20px;
+        }
+
+        .claim-basic-rules-wrap {
+            margin-bottom: 60px;
+        }
+
+        .claim-basic-rules-wrap p {
+            color: #5A5A5A;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .claim-arrow-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 40px;
+        }
+
+        .claim-arrow-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            color: #5A5A5A;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .claim-arrow-list li::before {
+            content: "\f061";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--ilnk-pl-secondary);
+        }
+
+        .claim-hassle-free-section {
+            background-color: #fff;
+            padding: 20px 0 0;
+        }
+
+        .claim-process-grid-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .claim-process-grid-header h2 {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 20px;
+        }
+
+        .claim-process-grid-header p {
+            margin: 0 auto;
+            color: #5A5A5A;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .claim-check-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .claim-check-item i {
+            color: var(--ilnk-pl-secondary);
+            font-size: 18px;
+            margin-top: 4px;
+            min-width: 20px;
+        }
+
+        .claim-check-item p {
+            color: #5A5A5A;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            text-align: left;
+        }
+
+        .claim-needs-box {
+            background-color: #FFF9F3;
+            border: 1px solid #D1E1FF;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px auto 60px;
+            max-width: 900px;
+        }
+
+        .claim-needs-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--ilnk-pl-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .claim-needs-title i {
+            color: var(--ilnk-pl-primary);
+        }
+
+        .claim-needs-intro {
+            color: #5A5A5A;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .claim-needs-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .claim-needs-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #5A5A5A;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .claim-needs-list li i {
+            color: var(--ilnk-pl-secondary);
+        }
+
+        .claim-why-us-section {
+            background: #F8FAFC;
+            padding: 60px 0;
+        }
+
+        .claim-why-us-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 50px;
+        }
+
+        .claim-benefit-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px 32px 0;
+            text-align: center;
+            height: 100%;
+            border: 1px solid #0000001A;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+            transition: transform 0.3s ease;
+        }
+
+        .claim-benefit-icon {
+            font-size: 40px;
+            color: var(--ilnk-pl-secondary);
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .claim-benefit-text {
+            color: #5A5A5A;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .claim-advice-header p {
+            margin: 0 auto;
+            color: #5A5A5A;
+            font-weight: 400;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .claim-step-title {
+            color: var(--ilnk-pl-secondary);
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+
+        .claim-form-col-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--ilnk-pl-primary);
+            margin-bottom: 20px;
+        }
+
+        .claim-download-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .claim-download-list li {
+            margin-bottom: 15px;
+        }
+
+        .claim-download-list li a {
+            color: #3B71FE;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .claim-download-list li a:hover {
+            text-decoration: underline;
+        }
+
+        .claim-download-list li i {
+            color: var(--ilnk-pl-secondary);
+            font-size: 18px;
+        }
+
+        .claim-email-link {
+            color: #3B71FE;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .claim-email-link:hover {
+            text-decoration: underline;
+        }
+
+        /* --- FAQ SECTION STYLES --- */
+
+        /* --- FAQ SECTION STYLES --- */
+        .ilnk-pl-faq {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .faq-accordion {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #FF7F050D;
+            border: 1px solid #E5E7EB;
+            transition: all 0.3s ease;
+        }
+
+        .faq-header {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FDF8F3;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: #1c2126;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            font-size: 17px;
+        }
+
+        .faq-icon {
+            color: #A0A0A0;
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            color: #5A5A5A;
+            font-size: 16px;
+            line-height: 1.7;
+            display: none;
+        }
+
+        /* --- FOOTER CTA (ORANGE) --- */
+        .ilnk-pl-footer-cta {
+            padding: 60px 0;
+            background-color: #f26121;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-cta-title {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta-desc {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            opacity: 0.9;
+        }
+
+        .footer-cta-btn {
+            display: inline-block;
+            padding: 18px 45px;
+            background-color: #fff;
+            color: #f26121;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: #f8f8f8;
+        }
+
+        .section-header h2 {
+            font-size: 40px;
+            font-weight: 800;
+            color: #1c2126;
+            margin-bottom: 20px;
+        }
+        
+        .claim-process-checks {
+               gap: 0px;
+        }
+
+        /* --- RESPONSIVENESS --- */
+        @media (max-width: 1199px) {
+            .hero-title {
+                font-size: 48px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .hero-section::before {
+                width: 100%;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .features-box {
+                margin: 50px auto 0;
+            }
+
+            .hero-content-wrapper {
+                padding-top: 50px;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 42px;
+            }
+
+            .claim-intro-section h2 {
+                font-size: 32px;
+            }
+
+            .advice-box {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 36px;
+            }
+
+            .footer-cta-title {
+                font-size: 30px;
+            }
+
+            .claim-intro-section {
+                padding: 60px 0 30px;
+            }
+
+            .more-services-wrap {
+                padding-bottom: 15px;
+            }
+            .claim-arrow-list {
+                margin: 0;
+            }
+            .claim-process-grid-header h2 {
+                font-size: 35px;
+            }
+            .claim-process-checks {
+               gap: 0!important;
+            }
+            .claim-why-us-title {
+                font-size: 35px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Global Header Elements -->
+    <div class="ilnk-pl-topbar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="mailto:info@ilinkinsurance.com.au"><i
+                            class="fa-regular fa-envelope me-2"></i>info@ilinkinsurance.com.au</a>
+                    <span class="text-white-50 mx-2">|</span>
+                    <a href="tel:1300170328"><i class="fa-solid fa-phone me-2"></i>1300 170 328</a>
+                </div>
+                <div class="col-md-6 ilnk-pl-topbar-right">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="ilnk-pl-header sticky-top">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.webp" alt="iLink Insurance">
+                </a>
+
+                <nav class="d-none d-lg-flex align-items-center">
+                    <a href="index.html" class="ilnk-pl-nav-link">HOME</a>
+                    <a href="about.html" class="ilnk-pl-nav-link">ABOUT US</a>
+                    <a href="#" class="ilnk-pl-nav-link">PRODUCTS <i class="bi bi-chevron-down"></i></a>
+                    <a href="documents.html" class="ilnk-pl-nav-link">DOCUMENTS <i class="bi bi-chevron-down"></i></a>
+                    <a href="#" class="ilnk-pl-nav-link">BLOG <i class="bi bi-chevron-down"></i></a>
+                    <a href="contact.html" class="ilnk-pl-nav-link">CONTACT US</a>
+                </nav>
+
+                <div class="d-none d-lg-block">
+                    <a href="contact.html" class="ilnk-pl-header-btn">Get A Quote</a>
+                </div>
+
+                <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mobileMenu">
+                    <i class="fa-solid fa-bars fs-2 text-dark"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="collapse d-lg-none" id="mobileMenu">
+                <div class="pt-3 pb-4 border-top mt-3">
+                    <nav class="d-flex flex-column gap-3">
+                        <a href="index.html" class="ilnk-pl-nav-link mx-0">HOME</a>
+                        <a href="about.html" class="ilnk-pl-nav-link mx-0">ABOUT US</a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">PRODUCTS <i class="bi bi-chevron-down"></i></a>
+                        <a href="documents.html" class="ilnk-pl-nav-link mx-0">DOCUMENTS <i
+                                class="bi bi-chevron-down"></i></a>
+                        <a href="#" class="ilnk-pl-nav-link mx-0">BLOG <i class="bi bi-chevron-down"></i></a>
+                        <a href="contact.html" class="ilnk-pl-nav-link mx-0">CONTACT US</a>
+                        <div class="mt-2">
+                            <a href="contact.html" class="ilnk-pl-header-btn d-inline-block w-100 text-center">Get A
+                                Quote</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="images/hero-banner.png" class="hero-image" alt="Office workers discussing insurance">
+        <div class="container hero-content-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="brand-name">iLink Insurance</div>
+                    <h1 class="hero-title">Simplifying Insurance<br>For You At Every Step.</h1>
+                    <a href="#claim-process" class="claim-btn">Claim Process</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="features-box">
+                        <h3 class="features-heading">Plan it Right</h3>
+                        <div class="features-grid">
+                            <div class="row g-2">
+                                <div class="col-md-4">
+                                    <div class="feature-item p-3">
+                                        <div class="feature-icon mb-2">
+                                            <img src="images/Money Icon.png" alt="Instant Cover Icon">
+                                        </div>
+                                        <div class="feature-title">Instant Cover</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-item p-3">
+                                        <div class="feature-icon mb-2">
+                                            <img src="images/Claim Icon.png" alt="Easier Claims Icon">
+                                        </div>
+                                        <div class="feature-title">Easier Claims</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-item p-3">
+                                        <div class="feature-icon mb-2">
+                                            <img src="images/Contract Icon.png" alt="Competitive Coverage Icon">
+                                        </div>
+                                        <div class="feature-title">Competitive Coverage</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-services-wrap">
+                            <a href="index.html#ilnk-pl-services"><i class="fa-solid fa-arrow-right-long"></i> More
+                                insurance
+                                services</a>
+                        </div>
+                        <div class="call-bar">
+                            <a href="tel:1300170328"><i class="bi bi-telephone-fill"></i> Call 1300 170 328</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="claim-advice-content">
+        <div class="container">
+            <div class="claim-advice-header">
+                <h2>General Advice For Claims</h2>
+                <p>At iLink Insurance Brokers we place a strong emphasis upon claims service for our clients. Our highly
+                    personalised service assures that when a claim arises, we will assist you in every way possible.</p>
+            </div>
+
+            <div class="claim-steps-wrap">
+                <h3 class="claim-step-title">Step 1 - Download Claim Form</h3>
+
+                <div class="row g-4">
+                    <!-- Motor Claim Forms -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="claim-form-col-title">Motor Claim Forms</h4>
+                        <ul class="claim-download-list">
+                            <li><a href="assets/pdf/QBE-Motor-vehicle-claim-form.pdf"><i
+                                        class="fa-solid fa-download"></i>
+                                    QBE - Download</a></li>
+                            <li><a href="assets/pdf/NTI-CommercialMotorVehicleClaimForm.pdf"><i
+                                        class="fa-solid fa-download"></i> NTI - Download</a></li>
+                            <li><a href="assets/pdf/ZURICH-motor_claim_form.pdf"><i class="fa-solid fa-download"></i>
+                                    Zurich
+                                    - Download</a></li>
+                            <li><a href="assets/pdf/Allianz-Heavy-Motor-Claim-Form.pdf"><i
+                                        class="fa-solid fa-download"></i>
+                                    Allianz - Download</a></li>
+                            <li><a href="assets/pdf/ATL-commercial-motor-claim-form-r5-FORM.pdf"><i
+                                        class="fa-solid fa-download"></i> ATL - Download</a></li>
+                            <li><a href="assets/pdf/PEN-UW-Transport-Motor-Vehicle-Accident-Claim-Form_v0418.pdf"><i
+                                        class="fa-solid fa-download"></i> PEN - Download</a></li>
+                            <li><a href="assets/pdf/Trucking-Solutions-Claim-Form.pdf"><i
+                                        class="fa-solid fa-download"></i>
+                                    Trucking Solutions - Download</a></li>
+                            <li><a href="assets/pdf/HMIA-Claim-Form.pdf"><i class="fa-solid fa-download"></i> HMIA -
+                                    Download</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Property Claim Forms -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="claim-form-col-title">Property Claim Forms</h4>
+                        <ul class="claim-download-list">
+                            <li><a href="assets/pdf/AIG-property-claim-form.pdf"><i class="fa-solid fa-download"></i>
+                                    AIG -
+                                    Download</a></li>
+                            <li><a href="assets/pdf/CALIBIRE-Claim-Form-property.pdf"><i
+                                        class="fa-solid fa-download"></i>
+                                    Calibre - Download</a></li>
+                            <li><a href="assets/pdf/VERO-property-claim-form.pdf"><i class="fa-solid fa-download"></i>
+                                    Vero -
+                                    Download</a></li>
+                            <li><a href="assets/pdf/CGU-Property-Claim-Form.pdf"><i class="fa-solid fa-download"></i>
+                                    CGU -
+                                    Download</a></li>
+                            <li><a href="assets/pdf/ZURICH-general_claim_form.pdf"><i class="fa-solid fa-download"></i>
+                                    Zurich - Download</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Liability Claim Forms -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="claim-form-col-title">Liability Claim Forms</h4>
+                        <ul class="claim-download-list">
+                            <li><a href="assets/pdf/CGU-Liability-Claim-Form.pdf"><i class="fa-solid fa-download"></i>
+                                    CGU -
+                                    Download</a></li>
+                            <li><a href="assets/pdf/QBE-PL-claim-form-qm120.pdf"><i class="fa-solid fa-download"></i>
+                                    QBE -
+                                    Download</a></li>
+                            <li><a href="assets/pdf/CALIBIRE-Claim-Form-liability.pdf"><i
+                                        class="fa-solid fa-download"></i>
+                                    Calibre - Download</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="claim-step-title">Step 2- Print the downloaded form & Fill it up.</h3>
+                <h3 class="claim-step-title">Step 3- Scan the filled up copy.</h3>
+                <h3 class="claim-step-title">Step 4 - Email us at <a href="mailto:claims@ilinkinsurance.com.au"
+                        class="claim-email-link">claims@ilinkinsurance.com.au</a></h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="claim-basic-rules-content">
+        <div class="container pt-4">
+            <div class="claim-basic-rules-wrap">
+                <p>In the event of a claim or loss, there are some basic rules and/or procedures which you should be
+                    aware of.</p>
+                <ul class="claim-arrow-list">
+                    <li>To understand our client's insurance needs and structure exceptional programmes that produce the
+                        best possible results</li>
+                    <li>Saving our clients time and money by managing your insurance needs so you can concentrate on
+                        running your business</li>
+                    <li>Eliminate the need for you to conduct price and product comparison for your insurance needs</li>
+                    <li>Ensure your insurances are in place with secure and stable insurers</li>
+                    <li>Provide you with the confidence and certainty to pursue your objectives</li>
+                </ul>
+                <p>Adherence to the above basics will assist in the effective management of your claim.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="claim-hassle-free-section">
+        <div class="container">
+            <div class="claim-process-grid-header">
+                <h2>Simple & Hassle-Free Claims Process</h2>
+                <p>We understand that unexpected situations can be challenging. That's why our claims process is
+                    designed to be simple, transparent, and efficient. From the moment you notify us, our team works
+                    closely with you to ensure your claim is handled promptly and professionally.</p>
+            </div>
+
+            <div class="row claim-process-checks">
+                <div class="col-lg-4">
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>All losses or incidents which may result in a claim are to be reported to iLink Insurance
+                            Brokers as soon as possible.</p>
+                    </div>
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>If the loss involves theft, burglary or malicious damage contact the Police immediately and
+                            record details of the officer, station notified and police report number</p>
+                    </div>
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Complete the appropriate claim form and return to our office. Attach all supporting
+                            documentation including repair quotes and original valuations or receipts where possible</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>We will submit insurance claims directly to your insurer with supporting documents</p>
+                    </div>
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>We will inform you of the appointment of loss adjusters, solicitors and other consultants by
+                            your insurer</p>
+                    </div>
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>We will recommend and facilitate the appointment of other professional advisors (if
+                            necessary)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Actively work with your insurer or their representative/s to resolve and negotiate claims
+                            effectively.</p>
+                    </div>
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Ensure timely receipt of settlement payments from your insurer.</p>
+                    </div>
+                    <div class="claim-check-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Periodically review outstanding estimates of the claim and keep you informed on the current
+                            position of outstanding claims.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="claim-needs-section">
+        <div class="container">
+            <div class="claim-needs-box">
+                <h3 class="claim-needs-title"><i class="fa-solid fa-file-invoice"></i> What You'll Need</h3>
+                <p class="claim-needs-intro">To ensure a smooth claims process, please have the following information
+                    ready:</p>
+                <ul class="claim-needs-list">
+                    <li><i class="fa-regular fa-circle-check"></i> Policy number and coverage details</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Description of the incident</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Date and time of occurrence</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Supporting documents (photos, reports, invoices)</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Contact details for further communication</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="claim-why-us-section">
+        <div class="container">
+            <h2 class="claim-why-us-title">Why Choose Our Claims Support</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="claim-benefit-card">
+                        <i class="fa-regular fa-clock claim-benefit-icon"></i>
+                        <p class="claim-benefit-text">Fast and responsive claim handling</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="claim-benefit-card">
+                        <i class="fa-regular fa-envelope claim-benefit-icon"></i>
+                        <p class="claim-benefit-text">Clear and transparent communication</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="claim-benefit-card">
+                        <i class="fa-regular fa-user claim-benefit-icon"></i>
+                        <p class="claim-benefit-text">Experienced claims specialists</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="claim-benefit-card">
+                        <i class="bi bi-shield claim-benefit-icon"></i>
+                        <p class="claim-benefit-text">Secure and confidential process</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="ilnk-pl-faq">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <h4 class="faq-question">What does public liability insurance cover?</h4>
+                        <i class="bi bi-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Public liability insurance generally protects you and your business against the financial
+                            risk of being found liable to a third party for death or injury, loss or damage of property
+                            as a result of your business activities.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <h4 class="faq-question">Who needs public liability insurance?</h4>
+                        <i class="bi bi-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Any business that interacts with the public, clients, or suppliers could benefit from public
+                            liability insurance. This includes tradespeople, retailers, consultants, and service-based
+                            businesses.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <h4 class="faq-question">How much coverage do I need?</h4>
+                        <i class="bi bi-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The amount of coverage you need depends on your business type, the risks involved, and
+                            potential contract requirements. Most Australian businesses opt for $5M, $10M, or $20M
+                            limits.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <h4 class="faq-question">How quickly can I get insured?</h4>
+                        <i class="bi bi-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>With Insuria, you can often get a quote and activate your coverage within minutes. Some
+                            specialized risks may require review by our expert brokers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+
+    <script>
+        function toggleFaq(header) {
+            const item = header.parentElement;
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon');
+            const isOpen = answer.style.display === 'block';
+
+            // Close all answers
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+            if (!isOpen) {
+                answer.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
