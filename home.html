@@ -1156,6 +1156,7 @@
             .testimonial-card {
                 width: 100%;
             }
+
             .more-services-wrap {
                 padding-bottom: 15px;
             }
@@ -1253,7 +1254,210 @@
             color: #f26121;
             background-color: #f8f8f8;
         }
+
+        /* --- PREMIUM HERO SECTION V2 --- */
+        .hero-v2 {
+            background-color: #F7F5ED;
+            padding: 100px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .expertise-badge {
+            display: inline-flex;
+            align-items: center;
+           background: #FF7F0514;
+            color: #F27A18;
+            padding: 10px 15px;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero-h1-v2 {
+            font-size: 52px;
+            font-weight: 700;
+            color: #1C1C1C;
+            line-height: 1.3;
+            margin-bottom: 30px;
+            font-family: 'Inter', sans-serif;
+            /* letter-spacing: -2px; */
+        }
+
+        .hero-h1-v2 .highlight {
+            position: relative;
+            padding: 0 2px 0 0px;
+            color: #fff;
+            display: inline-block;
+            margin-left: 15px;
+            z-index: 1;
+        }
+
+        .hero-h1-v2 .highlight::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            right: 0;
+            bottom: 2px;
+            background-color: #F27A18;
+            transform: skewX(-15deg);
+            z-index: -1;
+            border-radius: 4px;
+        }
+
+        .hero-desc-v2 {
+            font-size: 18px;
+            color: #5A5A5A;
+            line-height: 1.7;
+            margin-bottom: 35px;
+            max-width: 550px;
+        }
+
+        .feature-cards-v2 {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .feature-card-v2 {
+            background: #fff;
+            padding: 15px 10px;
+            border-radius: 16px;
+            box-shadow: 0px 4px 8px 0px #00000026;
+            text-align: center;
+            flex: 1;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-card-v2-icon {
+            width: 55px;
+            height: 55px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-card-v2-icon img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .feature-card-v2-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1C1C1C;
+            line-height: 1.3;
+        }
+
+        .cta-btn-v2 {
+            display: inline-block;
+            background-color: #F27A18;
+            color: #fff;
+            padding: 15px 43px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(242, 122, 24, 0.25);
+            border: none;
+        }
+
+        .cta-btn-v2:hover {
+            background-color: #E66D10;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(242, 122, 24, 0.35);
+        }
+
+        /* Right Side Image Box */
+        .hero-img-box-v2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-img-bg-v2 {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #F8E0D1;
+            border-radius: 40px;
+            z-index: -1;
+        }
+
+        .hero-image-v2 {
+            width: 100%;
+            border-radius: 40px;
+            /* box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12); */
+            display: block;
+        }
+
+        @media (max-width: 1200px) {
+            .hero-h1-v2 {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .hero-v2 {
+                padding: 80px 0;
+            }
+
+            .hero-h1-v2 {
+                font-size: 52px;
+                text-align: center;
+            }
+
+            .hero-desc-v2 {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .feature-cards-v2 {
+                justify-content: center;
+            }
+
+            .hero-content-left-v2 {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-img-box-v2 {
+                margin-top: 70px;
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-h1-v2 {
+                font-size: 40px;
+            }
+
+            .feature-cards-v2 {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .feature-card-v2 {
+                width: 100%;
+            }
+        }
     </style>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
@@ -1326,53 +1530,45 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <img src="images/hero-banner.png" class="hero-image" alt="Office workers discussing insurance">
-        <div class="container hero-content-wrapper">
+    <section class="hero-v2">
+        <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="brand-name">iLink Insurance</div>
-                    <h1 class="hero-title">Simplifying Insurance<br>For You At Every Step.</h1>
-                    <a href="claims.html" class="claim-btn">Claim Process</a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="features-box">
-                        <h3 class="features-heading">Plan it Right</h3>
-                        <div class="features-grid">
-                            <div class="row g-2">
-                                <div class="col-md-4">
-                                    <div class="feature-item">
-                                        <div class="feature-icon">
-                                            <img src="images/Money Icon.png" alt="Instant Cover Icon">
-                                        </div>
-                                        <div class="feature-title">Instant Cover</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="feature-item">
-                                        <div class="feature-icon">
-                                            <img src="images/Claim Icon.png" alt="Easier Claims Icon">
-                                        </div>
-                                        <div class="feature-title">Easier Claims</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="feature-item">
-                                        <div class="feature-icon">
-                                            <img src="images/Contract Icon.png" alt="Competitive Coverage Icon">
-                                        </div>
-                                        <div class="feature-title">Competitive Coverage</div>
-                                    </div>
-                                </div>
+                <div class="col-lg-6 hero-content-left-v2">
+                    <div class="expertise-badge">
+                        25 years of expertise
+                    </div>
+                    <h1 class="hero-h1-v2">Simplifying Insurance<br>For You <span class="highlight">At Every
+                            Step.</span></h1>
+                    <p class="hero-desc-v2">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text.
+                    </p>
+                    <div class="feature-cards-v2">
+                        <div class="feature-card-v2">
+                            <div class="feature-card-v2-icon">
+                                <img src="images/Money Icon.png" alt="Instant Cover">
                             </div>
+                            <div class="feature-card-v2-title">Instant Cover</div>
                         </div>
-                        <div class="more-services-wrap">
-                            <a href="claims.html"><i class="fa-solid fa-arrow-right-long"></i> More insurance
-                                services</a>
+                        <div class="feature-card-v2">
+                            <div class="feature-card-v2-icon">
+                                <img src="images/Claim Icon.png" alt="Easier Claims">
+                            </div>
+                            <div class="feature-card-v2-title">Easier Claims</div>
                         </div>
-                        <div class="call-bar">
-                            <a href="tel:1300170328"><i class="bi bi-telephone-fill"></i> Call 1300 170 328</a>
+                        <div class="feature-card-v2">
+                            <div class="feature-card-v2-icon">
+                                <img src="images/Contract Icon.png" alt="Competitive Coverage">
+                            </div>
+                            <div class="feature-card-v2-title">Competitive Coverage</div>
                         </div>
+                    </div>
+                    <a href="#ilink-pl-quote-form" class="cta-btn-v2">Get Started</a>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end">
+                    <div class="hero-img-box-v2">
+                        <div class="hero-img-bg-v2"></div>
+                        <img src="images/home-banner.png" class="hero-image-v2" alt="Insurance Expertise">
                     </div>
                 </div>
             </div>
